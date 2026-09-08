@@ -1,0 +1,57 @@
+{
+  "schema": "U1-R208-thin-gap-relevance-result-v1",
+  "verdict": "THIN_GAP_RELEVANCE_SUPPORTED",
+  "preregistration_sha256": "9c50fac58960e186821e8e4be5ca4b1d1127aa2c8d273f181bcf4c00ae277468",
+  "geometry": {
+    "H0_over_R0": 0.1,
+    "aspect_R0_over_H0": 10.0,
+    "mesh": "34x10_ec10",
+    "reference_axial_element_size": 0.01
+  },
+  "baseline": {
+    "grad_inf_pre": 6.9186098686051245e-09,
+    "grad_inf_twist": 6.634289038270902e-12,
+    "runtime_s": 17.27788257598877
+  },
+  "interface_singular_values_Pa_per_logbeta": [
+    50.16913528532301,
+    3.479966217956585,
+    0.0028232525920816576
+  ],
+  "interface_step_checks": [
+    {
+      "channel": 0,
+      "step_angle_deg": 0.0001742723302115521,
+      "radius_deriv": -0.0017677327246445884
+    },
+    {
+      "channel": 1,
+      "step_angle_deg": 0.0004286555928420001,
+      "radius_deriv": -8.925384875624331e-06
+    },
+    {
+      "channel": 2,
+      "step_angle_deg": 5.1715008574058844e-05,
+      "radius_deriv": -0.00018236680610073108
+    }
+  ],
+  "constitutive_tangent": {
+    "norm_Pa_per_c": 33.234775080629845,
+    "published_amplitude_response_SD": 12.702530444467211,
+    "outside_interface_span_norm_Pa_per_c": 2.430469695328765,
+    "outside_interface_span_fraction": 0.07313031875294111,
+    "angle_to_interface_span_deg": 4.193802405184278,
+    "step_angle_deg": 7.488427187659217e-05,
+    "radius_deriv": 3.8841108107590117e-05
+  },
+  "reference_H_over_R_0p20": {
+    "norm_Pa_per_c": 11.940856363873285,
+    "outside_interface_span_fraction": 0.033226845705082476,
+    "thin_to_reference_norm_ratio": 2.783282376729754
+  },
+  "pass_flags": {
+    "numerical_validity": true,
+    "finite_response_SD": true,
+    "interface_span_overlap": true
+  }
+}

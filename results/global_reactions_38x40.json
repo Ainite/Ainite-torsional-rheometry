@@ -1,0 +1,46 @@
+{
+  "baseline": {
+    "pre": {
+      "axial_force_N": -47.30774323048513,
+      "torque_Nm": 0.0
+    },
+    "twist": {
+      "axial_force_N": -47.544356083975025,
+      "torque_Nm": 0.06979966366380154
+    }
+  },
+  "constitutive": {
+    "pre": {
+      "axial_force_N": -47.33086953442453,
+      "torque_Nm": 0.0
+    },
+    "twist": {
+      "axial_force_N": -47.570386426655716,
+      "torque_Nm": 0.06986889136942219
+    }
+  },
+  "interface_032": {
+    "pre": {
+      "axial_force_N": -47.76290535097429,
+      "torque_Nm": 0.0
+    },
+    "twist": {
+      "axial_force_N": -48.00497012729723,
+      "torque_Nm": 0.06992291264081295
+    }
+  },
+  "constitutive_vs_interface_032": {
+    "axial_force_N_difference_interface_minus_constitutive": -0.434583700641511,
+    "axial_force_N_relative_to_constitutive_pct": 0.9135593239536839,
+    "axial_force_N_twist_increment_constitutive": -0.23951689223118677,
+    "axial_force_N_twist_increment_interface": -0.242064776322934,
+    "axial_force_N_twist_increment_difference": -0.002547884091747221,
+    "axial_force_N_twist_increment_relative_pct": 1.0637596655554253,
+    "torque_Nm_difference_interface_minus_constitutive": 5.402127139075841e-05,
+    "torque_Nm_relative_to_constitutive_pct": 0.07731806005784224,
+    "torque_Nm_twist_increment_constitutive": 0.06986889136942219,
+    "torque_Nm_twist_increment_interface": 0.06992291264081295,
+    "torque_Nm_twist_increment_difference": 5.402127139075841e-05,
+    "torque_Nm_twist_increment_relative_pct": 0.07731806005784224
+  }
+}

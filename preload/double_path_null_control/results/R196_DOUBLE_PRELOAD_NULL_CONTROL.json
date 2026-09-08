@@ -1,0 +1,58 @@
+{
+  "schema": "U1-R196-double-preload-null-control-v1",
+  "normalization": {
+    "single_0.95": {
+      "unit_max_stress_increment_over_G": 0.06540977700314525,
+      "argmax_lambda_gamma": [
+        1.0,
+        0.8
+      ],
+      "coefficient_for_0.05G": 0.764411717801694
+    },
+    "double_0.95_0.85": {
+      "unit_max_stress_increment_over_G": 0.0007429781787570257,
+      "argmax_lambda_gamma": [
+        1.0,
+        0.8
+      ],
+      "coefficient_for_0.05G": 67.29672745389118
+    }
+  },
+  "coefficient_ratio_double_over_single": 88.0372787160093,
+  "primary_observer": "25 equal-area x=0.05..0.85",
+  "single_zero": {
+    "profile_norm_Pa": 9.399022153410973,
+    "profile_norm_SD": 4.699511076705487,
+    "radius_tangent_scaled": 8.826033237596675e-06,
+    "step_angle_deg": {
+      "1e-4_vs_5e-5": 0.00034039238972390263,
+      "5e-5_vs_2.5e-5": 0.0007688514927394455
+    },
+    "fit": {
+      "A_Pa": 2.2636031824496663,
+      "B_Pa": -1.0999020496748784,
+      "delta_q_kPa": -0.029107205314645952,
+      "delta_alpha1_kPa": 0.14234446310667667,
+      "gammaobs": 0.19994956971731415
+    }
+  },
+  "double_zero": {
+    "profile_norm_Pa": 6.32826120243279,
+    "profile_norm_SD": 3.164130601216395,
+    "radius_tangent_scaled": 2.191935521977939e-07,
+    "step_angle_deg": {
+      "1e-4_vs_5e-5": 0.00047980635686094953,
+      "5e-5_vs_2.5e-5": 0.0010973788186369232
+    },
+    "fit": {
+      "A_Pa": 1.4958312913124157,
+      "B_Pa": -0.663999719959699,
+      "delta_q_kPa": -0.02080628062708427,
+      "delta_alpha1_kPa": 0.09563557706075662,
+      "gammaobs": 0.19994956971731415
+    }
+  },
+  "double_over_single_profile_norm": 0.6732893166057937,
+  "equilibrium_grad_inf_pre": 4.0396657373376055e-12,
+  "equilibrium_grad_inf_twist": 1.7260097062536672e-10
+}

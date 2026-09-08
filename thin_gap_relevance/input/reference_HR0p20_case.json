@@ -1,0 +1,167 @@
+{
+  "tag": "aspect5_independent_radial",
+  "aspect": 5.0,
+  "H0_over_R0": 0.2,
+  "mesh": "34x20_ec10",
+  "bulk_cells": 24,
+  "radial_knots": [
+    0.0,
+    0.0375,
+    0.075,
+    0.11249999999999999,
+    0.15,
+    0.1875,
+    0.22499999999999998,
+    0.2625,
+    0.3,
+    0.33749999999999997,
+    0.375,
+    0.4125,
+    0.44999999999999996,
+    0.4875,
+    0.525,
+    0.5625,
+    0.6,
+    0.6375,
+    0.6749999999999999,
+    0.7125,
+    0.75,
+    0.7875,
+    0.825,
+    0.8624999999999999,
+    0.9,
+    0.91,
+    0.92,
+    0.93,
+    0.9400000000000001,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "baseline_grad_inf_pre": 5.17829415415047e-12,
+  "baseline_grad_inf_twist": 6.304207453376037e-09,
+  "newton_terminal_grad_inf": null,
+  "interface_singular_values_Pa_per_logbeta": [
+    21.69192592241756,
+    1.3255161816567593,
+    0.005446648581118957
+  ],
+  "interface_step_checks": [
+    {
+      "channel": 0,
+      "step_angle_deg": 0.00023573740172728804,
+      "radius_deriv": -0.0011226832263844244
+    },
+    {
+      "channel": 1,
+      "step_angle_deg": 0.0002490298351888992,
+      "radius_deriv": -1.072621103048732e-05
+    },
+    {
+      "channel": 2,
+      "step_angle_deg": 5.402437851462355e-05,
+      "radius_deriv": -0.00036310186191101934
+    }
+  ],
+  "full": {
+    "norm": 11.940856363873285,
+    "orth_norm": 0.3967569919889698,
+    "orth_fraction": 0.033226845705082476,
+    "angle_deg": 1.904108498442044,
+    "step_angle_deg": 9.680829405406877e-05,
+    "radius_deriv": 1.2867324983290018e-05
+  },
+  "window_rows": [
+    {
+      "center": 0.8,
+      "halfwidth": 0.02,
+      "norm": 2.8599953455382545,
+      "orth_norm": 1.709859867955346,
+      "orth_fraction": 0.5978540736518396,
+      "angle_deg": 36.71636109639108,
+      "step_angle_deg": 0.0004844915321730208,
+      "radius_deriv": 1.3933298959045715e-08,
+      "mask_mass_fraction": 0.6400907231412041
+    },
+    {
+      "center": 0.82,
+      "halfwidth": 0.02,
+      "norm": 3.328077085365865,
+      "orth_norm": 2.0255721704454386,
+      "orth_fraction": 0.6086313863799107,
+      "angle_deg": 37.490608944428956,
+      "step_angle_deg": 0.0004171582069532962,
+      "radius_deriv": 1.8489654252107357e-08,
+      "mask_mass_fraction": 0.6728145303883155
+    },
+    {
+      "center": 0.84,
+      "halfwidth": 0.02,
+      "norm": 3.3019919207098285,
+      "orth_norm": 1.3617078096229176,
+      "orth_fraction": 0.41238980661412145,
+      "angle_deg": 24.355047383554805,
+      "step_angle_deg": 0.0005221075410856049,
+      "radius_deriv": 2.637889906509372e-08,
+      "mask_mass_fraction": 0.705691923196404
+    },
+    {
+      "center": 0.86,
+      "halfwidth": 0.02,
+      "norm": 3.6382375979221737,
+      "orth_norm": 1.0359178479046949,
+      "orth_fraction": 0.28473067523031365,
+      "angle_deg": 16.542750427570954,
+      "step_angle_deg": 0.0003434240153317375,
+      "radius_deriv": 3.957945082788683e-08,
+      "mask_mass_fraction": 0.7399551731850548
+    },
+    {
+      "center": 0.88,
+      "halfwidth": 0.02,
+      "norm": 3.8129032799291895,
+      "orth_norm": 0.37236371745374536,
+      "orth_fraction": 0.09765884160079209,
+      "angle_deg": 5.604372029243122,
+      "step_angle_deg": 0.00047942260138364413,
+      "radius_deriv": 6.761924353781978e-08,
+      "mask_mass_fraction": 0.7744639448449013
+    },
+    {
+      "center": 0.9,
+      "halfwidth": 0.02,
+      "norm": 4.317644749443962,
+      "orth_norm": 0.34267502668503563,
+      "orth_fraction": 0.07936619304521668,
+      "angle_deg": 4.552135432247502,
+      "step_angle_deg": 0.0003213956019407613,
+      "radius_deriv": 1.1764811347347859e-07,
+      "mask_mass_fraction": 0.8099025499183923
+    }
+  ],
+  "cancellation": {
+    "interior_center": 0.82,
+    "expanded_center": 0.88,
+    "halfwidth": 0.02,
+    "orth_angle_deg": 169.8816344064771,
+    "orth_norm_before": 2.0255721704454386,
+    "orth_norm_added_band": 2.1037059634472715,
+    "orth_norm_after": 0.37236371745374536,
+    "reduction_fraction": 0.8161686249017432,
+    "pass": true
+  },
+  "collapse_location": {
+    "largest_fraction_drop": 0.1962415797657892,
+    "interval": [
+      0.82,
+      0.84
+    ],
+    "midpoint": 0.83,
+    "pass_preinterface_location": false
+  },
+  "valid": true,
+  "runtime_s": 11.120662450790405
+}

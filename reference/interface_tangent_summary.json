@@ -1,0 +1,152 @@
+{
+  "constitutive_full_profile_norm_sigma": 4.698896752419443,
+  "single_interface_profiled_residual_sigma": {
+    "beta_r_local_tangent": 0.5845121462160762,
+    "beta_theta_local_tangent": 0.6165697775529758,
+    "beta_z_local_tangent": 0.4136348264641365,
+    "finite_beta_r_secant": 0.5208933351109867
+  },
+  "rank2_fixture_subspace_residual_sigma": 0.14318749985158255,
+  "rank2_fixture_subspace_angle_deg": 1.7462204567373254,
+  "rank3_fixture_subspace_residual_sigma": 0.13555665157605484,
+  "rank3_fixture_subspace_angle_deg": 1.6531330962592927,
+  "fixture_singular_values_Pa": [
+    21.671204506611947,
+    1.3417732948444028,
+    0.005193279668573491
+  ],
+  "fixture_s2_over_s1": 0.061915030815893224,
+  "fixture_s3_over_s1": 0.0002396396410263678,
+  "pairwise_fixture_angles_deg": {
+    "beta_r__beta_theta": 0.4217297956763039,
+    "beta_r__beta_z": 11.666224993778124,
+    "beta_theta__beta_z": 12.078919625430355
+  },
+  "constitutive_to_single_fixture_angles_deg": {
+    "beta_r": 7.145731707843077,
+    "beta_theta": 7.539857844617929,
+    "beta_z": 5.050173690401481
+  },
+  "radius": {
+    "constitutive_radius_tangent_scaled_um": 0.26490070422447454,
+    "fixture_radius_derivative_um_per_logbeta": {
+      "beta_r": -32.52507382654096,
+      "beta_theta": -0.49551303417914516,
+      "beta_z": -10.36334001528465
+    },
+    "single_best_pressure_fit": {
+      "beta_r": {
+        "delta_logbeta": -1.8422264602460106,
+        "multiplicative_percent": -84.15357812317232,
+        "residual_sigma": 0.5845121462160762,
+        "predicted_radius_um": 59.91855162470872,
+        "radius_mismatch_vs_constitutive_um": -59.65365092048424
+      },
+      "beta_theta": {
+        "delta_logbeta": 2.005050540390887,
+        "multiplicative_percent": 642.6469223930641,
+        "residual_sigma": 0.6165697775529758,
+        "predicted_radius_um": -0.9935286769516231,
+        "radius_mismatch_vs_constitutive_um": 1.2584293811760978
+      },
+      "beta_z": {
+        "delta_logbeta": 0.4545020059505229,
+        "multiplicative_percent": 57.53886534798378,
+        "residual_sigma": 0.4136348264641367,
+        "predicted_radius_um": -4.710158825294196,
+        "radius_mismatch_vs_constitutive_um": 4.975059529518671
+      }
+    },
+    "bounded_three_parameter": {
+      "0.05": {
+        "delta_logbeta": [
+          -0.049999999999999996,
+          0.049999999999999996,
+          0.049999999999999996
+        ],
+        "residual_sigma": 3.945342164917737,
+        "predicted_radius_um": 1.0833110388538583,
+        "radius_mismatch_vs_constitutive_um": -0.8184103346293837
+      },
+      "0.1": {
+        "delta_logbeta": [
+          -0.09999999999999998,
+          0.09999999999999998,
+          0.09999999999999996
+        ],
+        "residual_sigma": 3.1920423080953055,
+        "predicted_radius_um": 2.1666220777077165,
+        "radius_mismatch_vs_constitutive_um": -1.9017213734832419
+      },
+      "0.15": {
+        "delta_logbeta": [
+          -0.14999999999999997,
+          0.14999999999999997,
+          0.14999999999999997
+        ],
+        "residual_sigma": 2.4392331961245253,
+        "predicted_radius_um": 3.249933116561574,
+        "radius_mismatch_vs_constitutive_um": -2.9850324123370995
+      },
+      "0.25": {
+        "delta_logbeta": [
+          -0.24999999999985356,
+          0.2499999999998541,
+          0.2499999999997938
+        ],
+        "residual_sigma": 0.9398154775968118,
+        "predicted_radius_um": 5.416555194266737,
+        "radius_mismatch_vs_constitutive_um": -5.1516544900422625
+      },
+      "0.5": {
+        "delta_logbeta": [
+          -0.2829865446852713,
+          0.49999999999999994,
+          0.27609443537697664
+        ],
+        "residual_sigma": 0.1430466768308077,
+        "predicted_radius_um": 6.095141230576966,
+        "radius_mismatch_vs_constitutive_um": -5.830240526352492
+      }
+    },
+    "radius_exact_pressure_best": {
+      "delta_logbeta": [
+        -0.10698951086177493,
+        0.6859902224235328,
+        0.2774225234769528
+      ],
+      "pressure_residual_sigma": 0.14283577570247843,
+      "max_abs_logbeta": 0.6859902224235328,
+      "percent_changes": [
+        -10.14649022002827,
+        98.57371837972484,
+        31.972386756612003
+      ],
+      "radius_error_um": -6.606856988583543e-16
+    }
+  },
+  "linearized_bounded_boxes": {
+    "delta_log_beta_0.10": {
+      "approx_percent_range": "\u22129.5% / +10.5%",
+      "pressure_residual_sigma": 3.1920423080953055,
+      "radius_mismatch_um": 1.9017213734832419
+    },
+    "delta_log_beta_0.15": {
+      "approx_percent_range": "\u221213.9% / +16.2%",
+      "pressure_residual_sigma": 2.4392331961245253,
+      "radius_mismatch_um": 2.9850324123370995
+    },
+    "delta_log_beta_0.25": {
+      "approx_percent_range": "\u221222.1% / +28.4%",
+      "pressure_residual_sigma": 0.9398154775968118,
+      "radius_mismatch_um": 5.1516544900422625,
+      "joint_residual_if_radius_sigma_15um": 1.000603148481822
+    }
+  },
+  "linearized_thresholds": {
+    "pressure_residual_3sigma_log_box": 0.1127509751706936,
+    "pressure_residual_2sigma_log_box": 0.17920269103856967,
+    "pressure_residual_1sigma_log_box": 0.24595198526189382,
+    "joint_pressure_plus_radius_1sigma_log_box_if_radius_sigma_15um": 0.25004482842964443
+  }
+}

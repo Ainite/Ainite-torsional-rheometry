@@ -1,0 +1,71 @@
+{
+  "mesh": "30x40_ec8",
+  "ndof": 15932,
+  "baseline_radius_nondim": 0.9996617680491994,
+  "constitutive_radius_nondim": 0.9996757411282262,
+  "constitutive_norm_sigma": 4.6398979183357465,
+  "constitutive_J_pre": [
+    0.9617917113912376,
+    1.0476246778117337
+  ],
+  "constitutive_J_twist": [
+    0.9636866531879547,
+    1.046552922567019
+  ],
+  "025": {
+    "constitutive_norm_sigma": 4.6398979183357465,
+    "interface_norm_sigma": 3.6604638978112,
+    "direct_residual_sigma": 0.9878167108482898,
+    "direction_angle_deg": 1.785416303221957,
+    "optimal_scalar": 1.2669556330701093,
+    "direction_profiled_residual_sigma": 0.14456228413155062,
+    "radius_mismatch_um": 3.595515689384099,
+    "betas": [
+      778.8007830714049,
+      3852.076250063224,
+      3852.076250063224
+    ],
+    "J_pre": [
+      0.9367795180009346,
+      1.0726194728400689
+    ],
+    "J_twist": [
+      0.940204873917476,
+      1.070301964789575
+    ]
+  },
+  "032": {
+    "constitutive_norm_sigma": 4.6398979183357465,
+    "interface_norm_sigma": 4.641491539837365,
+    "direct_residual_sigma": 0.1434372629647639,
+    "direction_angle_deg": 1.7708921326403924,
+    "optimal_scalar": 0.9991792103741369,
+    "direction_profiled_residual_sigma": 0.14338666145555443,
+    "radius_mismatch_um": 4.949466621011478,
+    "betas": [
+      726.1490370736909,
+      4131.3832930078715,
+      4131.3832930078715
+    ],
+    "J_pre": [
+      0.9290680070665222,
+      1.0802166343332273
+    ],
+    "J_twist": [
+      0.9327567237351853,
+      1.0776650313927016
+    ]
+  },
+  "finite_constitutive_dAB_Pa": [
+    2.238339409862357,
+    -1.0962204584768143
+  ],
+  "interface_025_dAB_Pa": [
+    1.7783807007853654,
+    -0.8997848476191064
+  ],
+  "interface_032_dAB_Pa": [
+    2.247456731673106,
+    -1.1184908688374509
+  ]
+}

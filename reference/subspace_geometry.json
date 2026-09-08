@@ -1,0 +1,17 @@
+{
+  "principal_singular_values": [
+    0.9999973388881239,
+    0.9999804650320848
+  ],
+  "principal_angles_deg": [
+    0.1321810791257758,
+    0.3581332866824643
+  ],
+  "finite_constitutive_norm_SD": 4.63903120855723,
+  "outside_quadratic_SD": 0.1504583088578843,
+  "outside_rank2_SD": 0.14216786711305815,
+  "outside_full_span_SD": 0.13460656832718249,
+  "fraction_outside_quadratic": 0.03243313142199745,
+  "fraction_outside_rank2": 0.030646025155168833,
+  "fraction_outside_full": 0.02901609458433586
+}

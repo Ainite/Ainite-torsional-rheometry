@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "025 residual",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "025 angle",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "025 profiled",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "025 radius mismatch",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "032 residual",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "032 angle",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "032 profiled",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "032 radius mismatch",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "subspace outside_quadratic_SD",
+      "abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "subspace outside_rank2_SD",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "subspace outside_full_span_SD",
+      "abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "subspace finite_constitutive_norm_SD",
+      "abs_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "principal angle 1",
+      "abs_error": 5.514644296766846e-12,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "principal angle 2",
+      "abs_error": 1.017741446673881e-12,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    {
+      "name": "corr_AB",
+      "abs_error": 9.921297191572975e-07,
+      "tolerance": 5e-06,
+      "pass": true
+    },
+    {
+      "name": "sigma_AplusB_Pa",
+      "abs_error": 1.7590734091577076e-07,
+      "tolerance": 5e-07,
+      "pass": true
+    },
+    {
+      "name": "sigma_qP_kPa",
+      "abs_error": 3.976835319385863e-10,
+      "tolerance": 5e-10,
+      "pass": true
+    },
+    {
+      "name": "sigma_alpha1P_kPa",
+      "abs_error": 2.2790995479748943e-10,
+      "tolerance": 5e-10,
+      "pass": true
+    },
+    {
+      "name": "fitting-window residual identity (published rounding)",
+      "abs_error": 0.0007469580348905408,
+      "tolerance": 0.003,
+      "pass": true
+    }
+  ]
+}

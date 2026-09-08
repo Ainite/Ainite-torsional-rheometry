@@ -1,0 +1,129 @@
+{
+  "status": "PASS_EXACT_ARRAYS",
+  "comparisons": {
+    "finite_constitutive": {
+      "keys_a": [
+        "c",
+        "yb",
+        "ys"
+      ],
+      "keys_b": [
+        "c",
+        "yb",
+        "ys"
+      ],
+      "arrays": {
+        "c": {
+          "shape": [],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        },
+        "yb": {
+          "shape": [
+            20148
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ys": {
+          "shape": [
+            20148
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "pass": true
+    },
+    "interface_025": {
+      "keys_a": [
+        "betas",
+        "delta_log_beta",
+        "yb",
+        "ys"
+      ],
+      "keys_b": [
+        "betas",
+        "delta_log_beta",
+        "yb",
+        "ys"
+      ],
+      "arrays": {
+        "betas": {
+          "shape": [
+            3
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        },
+        "delta_log_beta": {
+          "shape": [
+            3
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        },
+        "yb": {
+          "shape": [
+            20148
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ys": {
+          "shape": [
+            20148
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "pass": true
+    },
+    "interface_032": {
+      "keys_a": [
+        "betas",
+        "delta_log_beta",
+        "yb",
+        "ys"
+      ],
+      "keys_b": [
+        "betas",
+        "delta_log_beta",
+        "yb",
+        "ys"
+      ],
+      "arrays": {
+        "betas": {
+          "shape": [
+            3
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        },
+        "delta_log_beta": {
+          "shape": [
+            3
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        },
+        "yb": {
+          "shape": [
+            20148
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ys": {
+          "shape": [
+            20148
+          ],
+          "exact_equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "pass": true
+    }
+  }
+}

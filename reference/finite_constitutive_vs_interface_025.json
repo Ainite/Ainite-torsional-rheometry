@@ -1,0 +1,61 @@
+{
+  "c": 0.7644117178,
+  "ok_pre": true,
+  "ok_tw": true,
+  "pre_hist": [
+    [
+      0.0012027438740578288,
+      0.03083339653682653
+    ],
+    [
+      7.529365053660086e-08,
+      0.030833383960574494
+    ],
+    [
+      9.396705795911627e-14,
+      0.030833383960571947
+    ]
+  ],
+  "tw_hist": [
+    [
+      0.0013799775265901336,
+      0.03681638404259259
+    ],
+    [
+      2.0781048099211344e-07,
+      0.03681635280071101
+    ],
+    [
+      1.3125733139274232e-12,
+      0.03681635280069712
+    ]
+  ],
+  "J_pre": [
+    0.9755743873122555,
+    1.0227345841594806
+  ],
+  "J_tw": [
+    0.9748004932681078,
+    1.0231478886201337
+  ],
+  "finite_constitutive_norm_sigma": 4.63903120855723,
+  "combined_interface_norm_sigma": 3.6129174700946027,
+  "fixed_parameter_residual_sigma": 1.0342016000648029,
+  "angle_deg": 1.8066817634037962,
+  "optimal_scalar_combined": 1.2833742094534086,
+  "direction_profiled_residual_sigma": 0.14625622182517492,
+  "finite_constitutive_dAB_Pa": [
+    2.238045222448954,
+    -1.0963845546196578
+  ],
+  "combined_dAB_Pa": [
+    1.7601181920147078,
+    -0.9025131624426765
+  ],
+  "baseline_radius_nondim": 0.9997478485865706,
+  "finite_constitutive_radius_nondim": 0.9997563698320113,
+  "combined_radius_nondim": 0.9999656070521682,
+  "finite_constitutive_radius_shift_um": 0.2556373632212061,
+  "combined_radius_shift_um": 6.532753967927185,
+  "finite_vs_combined_radius_mismatch_um": 6.277116604705979
+}

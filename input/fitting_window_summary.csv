@@ -1,0 +1,7 @@
+xmax,scaled_constitutive_tangent_norm_sigma,interface_response_norm_sigma,angle_deg,profiled_residual_sigma
+0.60,5.165,26.872,1.04,0.093
+0.70,5.029,26.758,2.40,0.210
+0.80,4.823,26.621,4.69,0.394
+0.85,4.696,26.530,6.11,0.500
+0.90,4.558,26.268,7.22,0.573
+0.95,4.323,25.199,8.56,0.643

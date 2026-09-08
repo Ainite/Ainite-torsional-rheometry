@@ -1,0 +1,28 @@
+{
+  "schema": "primary-interface-span-mesh-comparison-v1",
+  "H0_over_R0": 0.2,
+  "cutoff": 0.955,
+  "rows": [
+    {
+      "mesh": "30x12",
+      "canonical_eta3": 0.042335440357189544,
+      "MR_eta3": 0.12239348933770224
+    },
+    {
+      "mesh": "30x20",
+      "canonical_eta3": 0.038007719990099796,
+      "MR_eta3": 0.10199225533202975
+    },
+    {
+      "mesh": "30x40",
+      "canonical_eta3": 0.04271536732871113,
+      "MR_eta3": 0.08904485030342697
+    },
+    {
+      "mesh": "38x40",
+      "canonical_eta3": 0.032635381646658704,
+      "MR_eta3": 0.08709748940926758
+    }
+  ],
+  "interpretation": "primary-geometry persistence only; not a nested convergence sequence"
+}

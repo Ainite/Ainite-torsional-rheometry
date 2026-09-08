@@ -1,0 +1,48 @@
+{
+  "schema": "pressure-radius-compatibility-v1",
+  "observer": {
+    "pressure": "fixed equal-area pressure vector, cutoff r/a=0.955",
+    "radius": "current outer radius of loaded top face",
+    "joint_metric": "none; compatibility is tested in two directions to avoid arbitrary Pa/micrometre weighting"
+  },
+  "canonical_scale": 0.7644117178,
+  "canonical_scale_meaning": "5%-of-G homogeneous deviatoric-stress envelope used in the bounded fixture audit",
+  "meshes": {
+    "30x20": {
+      "mesh": "30x20",
+      "canonical_radius_target_um": 0.40387191070165773,
+      "pressure_optimal_fixture_radius_prediction_um": -14.870600075093886,
+      "pressure_optimal_radius_mismatch_um": 15.274471985795543,
+      "pressure_only_unbounded_residual_fraction": 0.038007697086458195,
+      "radius_exact_min_pressure_residual_fraction": 0.04006036325668512,
+      "radius_exact_delta_log_beta_r": -0.19557695108309905,
+      "radius_exact_delta_log_beta_theta": 0.3239673972431273,
+      "radius_exact_delta_log_beta_z": 0.319092266066936,
+      "radius_exact_beta_r_change_pct": -17.763994036795605,
+      "radius_exact_beta_theta_change_pct": 38.26022297403122,
+      "radius_exact_beta_z_change_pct": 37.587826592595476,
+      "radius_exact_linf_logbeta": 0.3239673972431273
+    },
+    "38x40": {
+      "mesh": "38x40",
+      "canonical_radius_target_um": 0.2649007042244746,
+      "pressure_optimal_fixture_radius_prediction_um": 77.12512278062265,
+      "pressure_optimal_radius_mismatch_um": -76.86022207639816,
+      "pressure_only_unbounded_residual_fraction": 0.032635248192245364,
+      "radius_exact_min_pressure_residual_fraction": 0.0378544138385886,
+      "radius_exact_delta_log_beta_r": -0.11266395172851708,
+      "radius_exact_delta_log_beta_theta": 0.5755965430140999,
+      "radius_exact_delta_log_beta_z": 0.3005099754755599,
+      "radius_exact_beta_r_change_pct": -10.654914771177337,
+      "radius_exact_beta_theta_change_pct": 77.81909779859039,
+      "radius_exact_beta_z_change_pct": 35.054737802543336,
+      "radius_exact_linf_logbeta": 0.5755965430140999
+    }
+  },
+  "interpretation": {
+    "pressure_optimal_test": "Fit the canonical pressure tangent with the full 3-stiffness fixture span, then compare the predicted radius with the canonical material radius tangent.",
+    "radius_exact_test": "Constrain the fixture combination to match the canonical radius tangent exactly, then minimize the pressure residual.",
+    "allowed": "boundary kinematics provide an independent compatibility check; the pressure-optimal fixture explanation predicts a strongly incompatible radius on both meshes, while a simultaneous near-pressure/radius fixture mimic requires much larger stiffness excursions than the modest interface-stiffness boxes tested here.",
+    "not_allowed": "edge radius alone proves global material/fixture identifiability; 326 um versus 0.26 um is a full three-nuisance theorem; a joint noise-weighted pressure-radius SNR without a calibrated joint covariance."
+  }
+}

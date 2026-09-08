@@ -1,0 +1,38 @@
+{
+  "schema": "U1-R208-thin-gap-relevance-prereg-v1",
+  "scientific_question": "Does the finite pressure sensitivity of the fixed-preload homogeneous-kernel perturbation, and its local confounding with the three-parameter interface model, persist at a rheometrically closer thin-gap geometry?",
+  "frozen_before_result": true,
+  "geometry": {
+    "H0_over_R0": 0.10,
+    "aspect_R0_over_H0": 10.0,
+    "nr": 34,
+    "nz": 10,
+    "edge_cells": 10,
+    "edge_width_over_R0": 0.10,
+    "resolution_note": "The 34x10 mesh preserves the R181 radial partition and approximately preserves the reference axial element size of the H/R=0.20, 34x20 case."
+  },
+  "loading_and_model": {
+    "lambda0": 0.95,
+    "gamma_rim": 0.20,
+    "K_over_G": 10000.0,
+    "beta_r": 1000.0,
+    "beta_theta": 3000.0,
+    "beta_z": 3000.0,
+    "constitutive_perturbation": "Q=1 representative of R=h_lambda0^2 Q",
+    "published_amplitude_c": 0.764412,
+    "point_noise_Pa": 2.0,
+    "observer": "25 equal-area pressure samples over 0.05<=x<=0.85"
+  },
+  "primary_metrics": {
+    "finite_response_SD": "c * ||g_constitutive||_2 / 2 Pa",
+    "outside_interface_span_fraction": "||(I-P_B)g_constitutive||_2 / ||g_constitutive||_2, B = three log-interface-stiffness tangent columns"
+  },
+  "pass_rules": {
+    "finite_response_SD_min": 1.0,
+    "outside_interface_span_fraction_max": 0.10,
+    "baseline_residual_inf_max": 1e-7,
+    "tangent_step_angle_deg_max": 0.01
+  },
+  "interpretation_if_pass": "Supports persistence, at H/R=0.10, of a measurable finite-specimen sensitivity for the representative homogeneous-kernel direction together with strong local confounding by the prescribed three-parameter interface model. It does not establish experimentally calibrated interface uncertainty or an asymptotic thin-gap limit.",
+  "interpretation_if_fail": "The finite-BVP application claim should be reduced to proof-of-principle at the thicker tested geometries; the exact homogeneous-kernel theorem is unaffected."
+}

@@ -1,0 +1,24 @@
+{
+  "principal_singular_values": [
+    0.9999973388881237,
+    0.9999804650320849
+  ],
+  "principal_angles_deg": [
+    0.13218107913129046,
+    0.35813328668144656
+  ],
+  "finite_constitutive_norm_SD": 4.63903120855723,
+  "outside_quadratic_SD": 0.15045830885788422,
+  "outside_rank2_SD": 0.14216786711305815,
+  "outside_full_span_SD": 0.13460656832718257,
+  "fixture_singular_values_Pa": [
+    21.671204506611947,
+    1.3417732948444028,
+    0.005193279668573491
+  ],
+  "fixture_s2_over_s1": 0.061915030815893224,
+  "fixture_s3_over_s1": 0.0002396396410263678,
+  "fraction_quadratic": 0.032433131421997434,
+  "fraction_rank2": 0.030646025155168833,
+  "fraction_full_span": 0.029016094584335878
+}

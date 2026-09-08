@@ -1,0 +1,36 @@
+{
+  "interface_025": {
+    "constitutive_norm_sigma": 4.63903120855723,
+    "interface_norm_sigma": 3.6129174700946027,
+    "direct_residual_sigma": 1.0342016000648029,
+    "direction_angle_deg": 1.8066817634037962,
+    "optimal_scalar": 1.2833742094534086,
+    "direction_profiled_residual_sigma": 0.14625622182517492,
+    "constitutive_dAB_Pa": [
+      2.238045222448954,
+      -1.0963845546196578
+    ],
+    "interface_dAB_Pa": [
+      1.7601181920147078,
+      -0.9025131624426765
+    ],
+    "radius_mismatch_um": 6.277116604705979
+  },
+  "interface_032": {
+    "constitutive_norm_sigma": 4.63903120855723,
+    "interface_norm_sigma": 4.572202059297623,
+    "direct_residual_sigma": 0.1582532802104809,
+    "direction_angle_deg": 1.7846992977432397,
+    "optimal_scalar": 1.0141242259642944,
+    "direction_profiled_residual_sigma": 0.14447725546055787,
+    "constitutive_dAB_Pa": [
+      2.238045222448954,
+      -1.0963845546196578
+    ],
+    "interface_dAB_Pa": [
+      2.2207906854517656,
+      -1.1222802685297528
+    ],
+    "radius_mismatch_um": 8.53425007187436
+  }
+}

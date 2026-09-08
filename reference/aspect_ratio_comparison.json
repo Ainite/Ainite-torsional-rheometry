@@ -1,0 +1,39 @@
+{
+  "schema": "aspect-ratio-comparison-v1",
+  "source": "pre-specified aspect-ratio robustness calculation",
+  "controls_held_fixed": [
+    "material baseline and K/G",
+    "precompression eps=0.05",
+    "torsional gamma_R=0.20",
+    "edge transition ell/R0=0.10",
+    "beta_r,beta_theta,beta_z definitions",
+    "canonical exact-null perturbation",
+    "Mooney-Rivlin control",
+    "full rank-3 nuisance projection",
+    "fixed equal-area observer metric"
+  ],
+  "anchor_cutoff": 0.955,
+  "baseline": {
+    "H0_over_R0": 0.2,
+    "R0_over_H0": 5.0,
+    "mesh": "30x20",
+    "canonical_eta3": 0.038007719990099796,
+    "MR_eta3": 0.10199225533202975
+  },
+  "test": {
+    "H0_over_R0": 0.4,
+    "R0_over_H0": 2.5,
+    "mesh": "30x40",
+    "sensor_1600": {
+      "canonical_eta3": 0.13885412002234077,
+      "MR_eta3": 0.45992916917041354
+    },
+    "sensor_3200": {
+      "canonical_eta3": 0.13845459983149588,
+      "MR_eta3": 0.45974277067022445
+    },
+    "canonical_ratio_to_baseline": 3.642802037784965,
+    "MR_ratio_to_baseline": 4.507624320822782
+  },
+  "interpretation": "Interface-subspace alignment is geometry dependent in the two tested aspect ratios; the comparison does not establish a monotonic thickness law."
+}
