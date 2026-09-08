@@ -1,0 +1,60 @@
+{
+  "xmax": 0.77,
+  "preselected_midpoints": [
+    0.76,
+    0.78
+  ],
+  "interface_singular_values": [
+    22.81150846695099,
+    1.0340147324480096,
+    0.0031871250784647662
+  ],
+  "full_orth_norm": 0.30349257049664796,
+  "scan_floor": 0.030349257049664798,
+  "bands": [
+    {
+      "midpoint": 0.76,
+      "distance_to_xmax": 0.010000000000000009,
+      "pair": [
+        0.73,
+        0.79
+      ],
+      "inner_orth_norm": 1.3090115591067755,
+      "band_orth_norm": 1.3443535457060403,
+      "full_angle_deg": 166.2112500807899,
+      "reduction_fraction": 0.7552084299364633,
+      "full_gate_pass": true,
+      "direct_state_angle_deg": 172.5361457693075,
+      "direct_over_state": 1.1247009034954967,
+      "full_over_max_component": 0.1654095200996643,
+      "closure_over_max_component": 4.108879785753135e-08,
+      "mechanics_pass": true,
+      "band_pass": true
+    },
+    {
+      "midpoint": 0.78,
+      "distance_to_xmax": 0.010000000000000009,
+      "pair": [
+        0.75,
+        0.81
+      ],
+      "inner_orth_norm": 1.352787407127134,
+      "band_orth_norm": 1.4200360162292303,
+      "full_angle_deg": 170.70087382711236,
+      "reduction_fraction": 0.8266176893802761,
+      "full_gate_pass": true,
+      "direct_state_angle_deg": 165.80256496906347,
+      "direct_over_state": 1.0282906207481917,
+      "full_over_max_component": 0.24528272634848186,
+      "closure_over_max_component": 4.6617557564647285e-08,
+      "mechanics_pass": true,
+      "band_pass": true
+    }
+  ],
+  "boundary_neighborhood_pass": true,
+  "max_step_angle_deg": 0.0007344875292903152,
+  "baseline_grad_inf_pre": 5.17829415415047e-12,
+  "baseline_grad_inf_twist": 6.304207453376037e-09,
+  "numerical_valid": true,
+  "pass": true
+}

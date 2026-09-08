@@ -1,0 +1,83 @@
+{
+  "rule": {
+    "support": "C2 inner cutoff center 0.60 halfwidth 0.02",
+    "support_effect_pass": "inner orth fraction >= max(2*full orth fraction,0.08)",
+    "observers": [
+      0.73,
+      0.83,
+      0.93
+    ]
+  },
+  "cases": {
+    "0.73": {
+      "interface_singular_values": [
+        23.338921477002852,
+        0.906645961814455,
+        0.003413843622915116
+      ],
+      "full": {
+        "norm": 12.71320311279641,
+        "rank2_orth_fraction": 0.019599023628591797,
+        "rank3_orth_fraction": 0.01958922704230266,
+        "rank3_orth_norm": 0.24904182221147778,
+        "step_angle_deg": 0.00011162906772111715
+      },
+      "inner60": {
+        "norm": 0.7958714908450237,
+        "rank2_orth_fraction": 0.6679183774521348,
+        "rank3_orth_fraction": 0.6601956498029334,
+        "rank3_orth_norm": 0.5254308960580598,
+        "step_angle_deg": 0.0017749910986346931
+      },
+      "support_effect_pass": true,
+      "ratio_inner_to_full": 33.70197549792293
+    },
+    "0.83": {
+      "interface_singular_values": [
+        21.981087521588428,
+        1.249609794230812,
+        0.003862712832503282
+      ],
+      "full": {
+        "norm": 12.084539475180984,
+        "rank2_orth_fraction": 0.0316116956523036,
+        "rank3_orth_fraction": 0.028651783722376492,
+        "rank3_orth_norm": 0.3462436114274067,
+        "step_angle_deg": 0.00010012839509585997
+      },
+      "inner60": {
+        "norm": 0.6756993747063957,
+        "rank2_orth_fraction": 0.6488643844663406,
+        "rank3_orth_fraction": 0.6463043452551757,
+        "rank3_orth_norm": 0.4367074419589487,
+        "step_angle_deg": 0.0021681204783086955
+      },
+      "support_effect_pass": true,
+      "ratio_inner_to_full": 22.557211499206744
+    },
+    "0.93": {
+      "interface_singular_values": [
+        20.346998090267768,
+        1.5865879310509299,
+        0.03353115252786524
+      ],
+      "full": {
+        "norm": 11.278896997679176,
+        "rank2_orth_fraction": 0.03405565436741785,
+        "rank3_orth_fraction": 0.033703609423710146,
+        "rank3_orth_norm": 0.38013953914003595,
+        "step_angle_deg": 9.270031907588375e-05
+      },
+      "inner60": {
+        "norm": 0.5189728057263538,
+        "rank2_orth_fraction": 0.5280353610765915,
+        "rank3_orth_fraction": 0.5218915969963882,
+        "rank3_orth_norm": 0.2708475463782231,
+        "step_angle_deg": 0.002375149794605239
+      },
+      "support_effect_pass": true,
+      "ratio_inner_to_full": 15.484739050804535
+    }
+  },
+  "verdict": "INNER_SUPPORT_EFFECT_SUPPORTED"
+}

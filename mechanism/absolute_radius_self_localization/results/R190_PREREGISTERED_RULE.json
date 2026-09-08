@@ -1,0 +1,13 @@
+{
+  "schema": "U1-R190-prospective-self-localization-preregister-v1",
+  "purpose": "prospectively test observer-boundary self-localization without pre-centering source bands and without the near-zero-residual normalization that invalidated R189",
+  "new_observer_xmax": [0.73, 0.83, 0.93],
+  "candidate_band_midpoints": "absolute grid 0.60,0.62,...,0.96, independent of observer cutoff",
+  "source_pair_for_midpoint": "C2 smooth cumulative source centers midpoint-0.03 and midpoint+0.03, halfwidth 0.02",
+  "scan_stage": "use only the full constitutive tangent. Project away each observer's independently recomputed three-column interface tangent span. A candidate is scan-eligible when inner and band orthogonal norms are each at least 10% of the full-tangent orthogonal norm, the band/interior angle exceeds 150 degrees, and adding the band reduces the interior orthogonal norm by at least 50%. Select the eligible candidate with the largest reduction.",
+  "localization_gate": "the selected winner must satisfy |midpoint-xmax| <= 0.05",
+  "winner_mechanics_gate": "only at the automatically selected winner, direct/state added-band angle >160 degrees; direct/state orthogonal-norm ratio in [0.75,1.33]; full-band orthogonal norm <=0.35*max(direct,state); decomposition closure normalized by max(direct,state) <1e-5",
+  "numerical_validity": "all centered finite-difference step-angle checks used in scan and winner decomposition <0.01 degrees; baseline equilibrium residual infinity norms <1e-7",
+  "verdict_rule": "all three unseen cutoffs pass localization, winner mechanics and numerical validity -> PROSPECTIVE_OBSERVER_SELF_LOCALIZATION_SUPPORTED",
+  "claim_boundary": "A pass supports the observer-organized mechanism in this tested finite-BVP family and closes the R189 construction objection; it is not a continuum theorem."
+}

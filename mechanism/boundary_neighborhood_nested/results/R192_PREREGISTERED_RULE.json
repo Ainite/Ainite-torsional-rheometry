@@ -1,0 +1,14 @@
+{
+  "schema": "U1-R192-boundary-neighborhood-preregister-v1",
+  "purpose": "prospectively test the refined claim suggested by R190/R191: nested cancellation exists in a pre-specified observer-boundary neighborhood but need not coincide with the global strongest full-only band",
+  "new_observer_xmax": [0.77, 0.87, 0.97],
+  "absolute_midpoint_grid": "0.60,0.62,...,0.96",
+  "candidate_selection": "for each unseen cutoff, before any tangent result is computed, select the two available absolute-grid midpoints with smallest |midpoint-xmax| (ties retained by distance then midpoint); no full-only optimization is used",
+  "source_pair_for_midpoint": "C2 smooth cumulative source centers midpoint-0.03 and midpoint+0.03, halfwidth 0.02",
+  "full_tangent_gate_per_band": "after projection away from the observer-specific independently recomputed three-column interface tangent span: band/interior orthogonal angle >150 degrees and adding the band reduces the interior orthogonal norm by at least 50%; inner and band orthogonal norms must each exceed 10% of the unmasked full-source orthogonal norm",
+  "winner_mechanics_gate_per_band": "direct/state added-band angle >160 degrees; direct/state orthogonal-norm ratio in [0.75,1.33]; full-band orthogonal norm <=0.35*max(direct,state); decomposition closure normalized by max(direct,state) <1e-5",
+  "boundary_neighborhood_gate": "at least one of the two pre-specified boundary-near bands passes both full_tangent_gate_per_band and winner_mechanics_gate_per_band",
+  "numerical_validity": "all centered finite-difference step-angle checks <0.01 degrees and baseline equilibrium residual infinity norms <1e-7",
+  "verdict_rule": "all three unseen cutoffs pass boundary_neighborhood_gate and numerical_validity -> PROSPECTIVE_BOUNDARY_NEIGHBORHOOD_NESTED_CANCELLATION_SUPPORTED; otherwise, if numerical validity holds but any cutoff fails -> PROSPECTIVE_BOUNDARY_NEIGHBORHOOD_NESTED_CANCELLATION_NOT_SUPPORTED",
+  "claim_boundary": "A pass supports existence of an R184-type nested-cancellation band in the tested observer-boundary neighborhood. It does not claim that this band is the global strongest cancellation band or that the mechanism is a continuum theorem."
+}

@@ -1,0 +1,26 @@
+{
+  "0.73": {
+    "principal_angles_U2_vs_poly_deg": [
+      0.6492211240351483,
+      72.03212989203355
+    ],
+    "band_operator_fro_fraction_in_poly_subspace": 0.9215002826279179,
+    "U2_energy_in_poly_subspace": 0.5475168782138153
+  },
+  "0.83": {
+    "principal_angles_U2_vs_poly_deg": [
+      1.2770192736829509,
+      75.99938203223383
+    ],
+    "band_operator_fro_fraction_in_poly_subspace": 0.7577823953016393,
+    "U2_energy_in_poly_subspace": 0.5290172929949777
+  },
+  "0.93": {
+    "principal_angles_U2_vs_poly_deg": [
+      10.236617626141397,
+      80.83477009355511
+    ],
+    "band_operator_fro_fraction_in_poly_subspace": 0.5537412180311176,
+    "U2_energy_in_poly_subspace": 0.4968943157271079
+  }
+}

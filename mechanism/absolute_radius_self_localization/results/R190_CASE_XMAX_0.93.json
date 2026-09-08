@@ -1,0 +1,285 @@
+{
+  "xmax": 0.93,
+  "interface_singular_values": [
+    20.346998090267768,
+    1.5865879310509299,
+    0.03353115252786524
+  ],
+  "full_orth_norm": 0.38013953914003595,
+  "scan_floor": 0.0380139539140036,
+  "winner": {
+    "midpoint": 0.96,
+    "pair": [
+      0.93,
+      0.99
+    ],
+    "distance_to_xmax": 0.029999999999999916,
+    "inner_orth_norm": 3.1141917921209523,
+    "band_orth_norm": 2.976446029917893,
+    "angle_deg": 172.78928199175434,
+    "reduction_fraction": 0.8693312402606499,
+    "eligible": true
+  },
+  "localization_pass": true,
+  "winner_mechanics": {
+    "direct_state_angle_deg": 177.94366517133142,
+    "direct_over_state": 0.3532720124130666,
+    "full_over_max_component": 0.647079661861402,
+    "closure_over_max_component": 4.6775104982483614e-08,
+    "pass": false
+  },
+  "max_step_angle_deg": 0.004016281547316305,
+  "baseline_grad_inf_pre": 5.17829415415047e-12,
+  "baseline_grad_inf_twist": 6.304207453376037e-09,
+  "valid": false,
+  "pass": false,
+  "candidates": [
+    {
+      "midpoint": 0.6,
+      "pair": [
+        0.57,
+        0.63
+      ],
+      "distance_to_xmax": 0.33000000000000007,
+      "inner_orth_norm": 0.21622250117815428,
+      "band_orth_norm": 0.38861772365761604,
+      "angle_deg": 105.98580061068178,
+      "reduction_fraction": -0.8000977746764404,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.62,
+      "pair": [
+        0.59,
+        0.65
+      ],
+      "distance_to_xmax": 0.31000000000000005,
+      "inner_orth_norm": 0.4260416895387176,
+      "band_orth_norm": 0.6378189434993172,
+      "angle_deg": 124.19195270604575,
+      "reduction_fraction": -0.24845134956397663,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.64,
+      "pair": [
+        0.61,
+        0.67
+      ],
+      "distance_to_xmax": 0.29000000000000004,
+      "inner_orth_norm": 0.5787590805047201,
+      "band_orth_norm": 0.9603495694274864,
+      "angle_deg": 122.81704282352662,
+      "reduction_fraction": -0.3981382026959812,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.66,
+      "pair": [
+        0.63,
+        0.69
+      ],
+      "distance_to_xmax": 0.27,
+      "inner_orth_norm": 0.3892216432057696,
+      "band_orth_norm": 0.989296829957145,
+      "angle_deg": 112.76527641872673,
+      "reduction_fraction": -1.343782711703636,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.68,
+      "pair": [
+        0.65,
+        0.71
+      ],
+      "distance_to_xmax": 0.25,
+      "inner_orth_norm": 0.5318923222751287,
+      "band_orth_norm": 1.1414772444747452,
+      "angle_deg": 115.93969026812393,
+      "reduction_fraction": -0.9308345284799902,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.7,
+      "pair": [
+        0.67,
+        0.73
+      ],
+      "distance_to_xmax": 0.2300000000000001,
+      "inner_orth_norm": 0.8091851806108481,
+      "band_orth_norm": 1.103863747933416,
+      "angle_deg": 134.6122370987233,
+      "reduction_fraction": 0.027976986084119693,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.72,
+      "pair": [
+        0.69,
+        0.75
+      ],
+      "distance_to_xmax": 0.21000000000000008,
+      "inner_orth_norm": 0.9122509583665638,
+      "band_orth_norm": 1.3658935916578152,
+      "angle_deg": 132.5941584915475,
+      "reduction_fraction": -0.10232649426716112,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.74,
+      "pair": [
+        0.71,
+        0.77
+      ],
+      "distance_to_xmax": 0.19000000000000006,
+      "inner_orth_norm": 1.026996061282225,
+      "band_orth_norm": 1.7302850548372841,
+      "angle_deg": 131.59369282249372,
+      "reduction_fraction": -0.2655697627461122,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.76,
+      "pair": [
+        0.73,
+        0.79
+      ],
+      "distance_to_xmax": 0.17000000000000004,
+      "inner_orth_norm": 0.7865466180734227,
+      "band_orth_norm": 1.7675900472276977,
+      "angle_deg": 117.62143864794214,
+      "reduction_fraction": -0.9915981928261282,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.78,
+      "pair": [
+        0.75,
+        0.81
+      ],
+      "distance_to_xmax": 0.15000000000000002,
+      "inner_orth_norm": 1.0055984008280723,
+      "band_orth_norm": 2.1058912626520105,
+      "angle_deg": 120.6536590690895,
+      "reduction_fraction": -0.8028104474820552,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.8,
+      "pair": [
+        0.77,
+        0.83
+      ],
+      "distance_to_xmax": 0.13,
+      "inner_orth_norm": 1.2997351616181374,
+      "band_orth_norm": 2.8630841958696545,
+      "angle_deg": 118.73775468118664,
+      "reduction_fraction": -0.9324032585031159,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.82,
+      "pair": [
+        0.79,
+        0.85
+      ],
+      "distance_to_xmax": 0.1100000000000001,
+      "inner_orth_norm": 1.5664848231285315,
+      "band_orth_norm": 3.130175467284798,
+      "angle_deg": 124.29065793514272,
+      "reduction_fraction": -0.6556910235418236,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.84,
+      "pair": [
+        0.81,
+        0.87
+      ],
+      "distance_to_xmax": 0.09000000000000008,
+      "inner_orth_norm": 1.812903302984096,
+      "band_orth_norm": 3.4083328281958725,
+      "angle_deg": 122.94156256059158,
+      "reduction_fraction": -0.5779367941549771,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.86,
+      "pair": [
+        0.83,
+        0.89
+      ],
+      "distance_to_xmax": 0.07000000000000006,
+      "inner_orth_norm": 2.511612461501963,
+      "band_orth_norm": 4.010735224422004,
+      "angle_deg": 134.3243636403005,
+      "reduction_fraction": -0.1482495838665565,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.88,
+      "pair": [
+        0.85,
+        0.91
+      ],
+      "distance_to_xmax": 0.050000000000000044,
+      "inner_orth_norm": 2.593614860168411,
+      "band_orth_norm": 2.9329239880589224,
+      "angle_deg": 148.9304451343006,
+      "reduction_fraction": 0.4155616923066865,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.9,
+      "pair": [
+        0.87,
+        0.93
+      ],
+      "distance_to_xmax": 0.030000000000000027,
+      "inner_orth_norm": 2.860646826023694,
+      "band_orth_norm": 4.604967114625231,
+      "angle_deg": 138.3642023379978,
+      "reduction_fraction": -0.08863204076460107,
+      "eligible": false
+    },
+    {
+      "midpoint": 0.92,
+      "pair": [
+        0.89,
+        0.95
+      ],
+      "distance_to_xmax": 0.010000000000000009,
+      "inner_orth_norm": 2.8839579637536863,
+      "band_orth_norm": 3.0820973144863295,
+      "angle_deg": 168.79067835815377,
+      "reduction_fraction": 0.7867058176742773,
+      "eligible": true
+    },
+    {
+      "midpoint": 0.94,
+      "pair": [
+        0.91,
+        0.97
+      ],
+      "distance_to_xmax": 0.009999999999999898,
+      "inner_orth_norm": 1.5158078796850558,
+      "band_orth_norm": 1.5780513592112149,
+      "angle_deg": 162.6466580127402,
+      "reduction_fraction": 0.6894244439783002,
+      "eligible": true
+    },
+    {
+      "midpoint": 0.96,
+      "pair": [
+        0.93,
+        0.99
+      ],
+      "distance_to_xmax": 0.029999999999999916,
+      "inner_orth_norm": 3.1141917921209523,
+      "band_orth_norm": 2.976446029917893,
+      "angle_deg": 172.78928199175434,
+      "reduction_fraction": 0.8693312402606499,
+      "eligible": true
+    }
+  ]
+}

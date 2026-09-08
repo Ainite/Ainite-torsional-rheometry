@@ -1,0 +1,204 @@
+{
+  "schema": "U1-R192-boundary-neighborhood-v1",
+  "preregistered_rule": {
+    "schema": "U1-R192-boundary-neighborhood-preregister-v1",
+    "purpose": "prospectively test the refined claim suggested by R190/R191: nested cancellation exists in a pre-specified observer-boundary neighborhood but need not coincide with the global strongest full-only band",
+    "new_observer_xmax": [
+      0.77,
+      0.87,
+      0.97
+    ],
+    "absolute_midpoint_grid": "0.60,0.62,...,0.96",
+    "candidate_selection": "for each unseen cutoff, before any tangent result is computed, select the two available absolute-grid midpoints with smallest |midpoint-xmax| (ties retained by distance then midpoint); no full-only optimization is used",
+    "source_pair_for_midpoint": "C2 smooth cumulative source centers midpoint-0.03 and midpoint+0.03, halfwidth 0.02",
+    "full_tangent_gate_per_band": "after projection away from the observer-specific independently recomputed three-column interface tangent span: band/interior orthogonal angle >150 degrees and adding the band reduces the interior orthogonal norm by at least 50%; inner and band orthogonal norms must each exceed 10% of the unmasked full-source orthogonal norm",
+    "winner_mechanics_gate_per_band": "direct/state added-band angle >160 degrees; direct/state orthogonal-norm ratio in [0.75,1.33]; full-band orthogonal norm <=0.35*max(direct,state); decomposition closure normalized by max(direct,state) <1e-5",
+    "boundary_neighborhood_gate": "at least one of the two pre-specified boundary-near bands passes both full_tangent_gate_per_band and winner_mechanics_gate_per_band",
+    "numerical_validity": "all centered finite-difference step-angle checks <0.01 degrees and baseline equilibrium residual infinity norms <1e-7",
+    "verdict_rule": "all three unseen cutoffs pass boundary_neighborhood_gate and numerical_validity -> PROSPECTIVE_BOUNDARY_NEIGHBORHOOD_NESTED_CANCELLATION_SUPPORTED; otherwise, if numerical validity holds but any cutoff fails -> PROSPECTIVE_BOUNDARY_NEIGHBORHOOD_NESTED_CANCELLATION_NOT_SUPPORTED",
+    "claim_boundary": "A pass supports existence of an R184-type nested-cancellation band in the tested observer-boundary neighborhood. It does not claim that this band is the global strongest cancellation band or that the mechanism is a continuum theorem."
+  },
+  "cases": [
+    {
+      "xmax": 0.77,
+      "preselected_midpoints": [
+        0.76,
+        0.78
+      ],
+      "interface_singular_values": [
+        22.81150846695099,
+        1.0340147324480096,
+        0.0031871250784647662
+      ],
+      "full_orth_norm": 0.30349257049664796,
+      "scan_floor": 0.030349257049664798,
+      "bands": [
+        {
+          "midpoint": 0.76,
+          "distance_to_xmax": 0.010000000000000009,
+          "pair": [
+            0.73,
+            0.79
+          ],
+          "inner_orth_norm": 1.3090115591067755,
+          "band_orth_norm": 1.3443535457060403,
+          "full_angle_deg": 166.2112500807899,
+          "reduction_fraction": 0.7552084299364633,
+          "full_gate_pass": true,
+          "direct_state_angle_deg": 172.5361457693075,
+          "direct_over_state": 1.1247009034954967,
+          "full_over_max_component": 0.1654095200996643,
+          "closure_over_max_component": 4.108879785753135e-08,
+          "mechanics_pass": true,
+          "band_pass": true
+        },
+        {
+          "midpoint": 0.78,
+          "distance_to_xmax": 0.010000000000000009,
+          "pair": [
+            0.75,
+            0.81
+          ],
+          "inner_orth_norm": 1.352787407127134,
+          "band_orth_norm": 1.4200360162292303,
+          "full_angle_deg": 170.70087382711236,
+          "reduction_fraction": 0.8266176893802761,
+          "full_gate_pass": true,
+          "direct_state_angle_deg": 165.80256496906347,
+          "direct_over_state": 1.0282906207481917,
+          "full_over_max_component": 0.24528272634848186,
+          "closure_over_max_component": 4.6617557564647285e-08,
+          "mechanics_pass": true,
+          "band_pass": true
+        }
+      ],
+      "boundary_neighborhood_pass": true,
+      "max_step_angle_deg": 0.0007344875292903152,
+      "baseline_grad_inf_pre": 5.17829415415047e-12,
+      "baseline_grad_inf_twist": 6.304207453376037e-09,
+      "numerical_valid": true,
+      "pass": true
+    },
+    {
+      "xmax": 0.87,
+      "preselected_midpoints": [
+        0.86,
+        0.88
+      ],
+      "interface_singular_values": [
+        21.395381754746207,
+        1.3959175418173597,
+        0.008386050909200145
+      ],
+      "full_orth_norm": 0.3913741787027948,
+      "scan_floor": 0.03913741787027948,
+      "bands": [
+        {
+          "midpoint": 0.86,
+          "distance_to_xmax": 0.010000000000000009,
+          "pair": [
+            0.83,
+            0.89
+          ],
+          "inner_orth_norm": 2.2272724803336295,
+          "band_orth_norm": 2.327565454872544,
+          "full_angle_deg": 171.53428903553473,
+          "reduction_fraction": 0.8425178147035485,
+          "full_gate_pass": true,
+          "direct_state_angle_deg": 171.03613763521957,
+          "direct_over_state": 1.108989461347707,
+          "full_over_max_component": 0.1780011235976337,
+          "closure_over_max_component": 1.8766751481188696e-08,
+          "mechanics_pass": true,
+          "band_pass": true
+        },
+        {
+          "midpoint": 0.88,
+          "distance_to_xmax": 0.010000000000000009,
+          "pair": [
+            0.85,
+            0.91
+          ],
+          "inner_orth_norm": 1.5674943589564614,
+          "band_orth_norm": 1.4303559495761313,
+          "full_angle_deg": 166.96833813080306,
+          "reduction_fraction": 0.7662123819701696,
+          "full_gate_pass": true,
+          "direct_state_angle_deg": 171.52186436627716,
+          "direct_over_state": 0.9136072509351402,
+          "full_over_max_component": 0.16562351691576946,
+          "closure_over_max_component": 2.6097484107092798e-08,
+          "mechanics_pass": true,
+          "band_pass": true
+        }
+      ],
+      "boundary_neighborhood_pass": true,
+      "max_step_angle_deg": 0.0005819117245667759,
+      "baseline_grad_inf_pre": 5.17829415415047e-12,
+      "baseline_grad_inf_twist": 6.304207453376037e-09,
+      "numerical_valid": true,
+      "pass": true
+    },
+    {
+      "xmax": 0.97,
+      "preselected_midpoints": [
+        0.94,
+        0.96
+      ],
+      "interface_singular_values": [
+        19.736474232968195,
+        1.58853886500964,
+        0.5406582776046983
+      ],
+      "full_orth_norm": 0.40248352480247385,
+      "scan_floor": 0.040248352480247385,
+      "bands": [
+        {
+          "midpoint": 0.94,
+          "distance_to_xmax": 0.030000000000000027,
+          "pair": [
+            0.91,
+            0.97
+          ],
+          "inner_orth_norm": 2.846390088813988,
+          "band_orth_norm": 3.0391418796945255,
+          "full_angle_deg": 167.13084504734783,
+          "reduction_fraction": 0.7587009524545453,
+          "full_gate_pass": true,
+          "direct_state_angle_deg": 172.51032211444914,
+          "direct_over_state": 1.123390351915314,
+          "full_over_max_component": 0.1650859212654275,
+          "closure_over_max_component": 1.582624450877566e-08,
+          "mechanics_pass": true,
+          "band_pass": true
+        },
+        {
+          "midpoint": 0.96,
+          "distance_to_xmax": 0.010000000000000009,
+          "pair": [
+            0.93,
+            0.99
+          ],
+          "inner_orth_norm": 3.3616035996275118,
+          "band_orth_norm": 3.394190822989377,
+          "full_angle_deg": 171.14461029080255,
+          "reduction_fraction": 0.8445489480729499,
+          "full_gate_pass": true,
+          "direct_state_angle_deg": 164.7415925492381,
+          "direct_over_state": 1.0703982252677429,
+          "full_over_max_component": 0.26493621948227375,
+          "closure_over_max_component": 1.7238973033196364e-08,
+          "mechanics_pass": true,
+          "band_pass": true
+        }
+      ],
+      "boundary_neighborhood_pass": true,
+      "max_step_angle_deg": 0.0003126677160272418,
+      "baseline_grad_inf_pre": 5.17829415415047e-12,
+      "baseline_grad_inf_twist": 6.304207453376037e-09,
+      "numerical_valid": true,
+      "pass": true
+    }
+  ],
+  "verdict": "PROSPECTIVE_BOUNDARY_NEIGHBORHOOD_NESTED_CANCELLATION_SUPPORTED"
+}

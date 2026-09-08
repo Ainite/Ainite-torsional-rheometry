@@ -1,0 +1,393 @@
+{
+  "schema": "U1-R181-cross-replication-v2",
+  "preregistered_rule": {
+    "reference": "R180 38x40 smooth-support gate; feasibility amendment reduces only axial count from 40 to 20 before any R181 scientific output",
+    "new_discretization": {
+      "nr": 34,
+      "nz": 20,
+      "edge_cells": 10,
+      "bulk_cells": 24,
+      "note": "bulk radial partition differs from R180: 24 rather than 22 cells on 0<=R/R0<=0.9; axial count reduced to 20 by pre-result feasibility amendment"
+    },
+    "cases": [
+      {
+        "tag": "aspect5_independent_radial",
+        "H0_over_R0": 0.2
+      },
+      {
+        "tag": "aspect2p5_independent_geometry",
+        "H0_over_R0": 0.4
+      }
+    ],
+    "smooth_window": {
+      "halfwidth": 0.02,
+      "centers": [
+        0.8,
+        0.82,
+        0.84,
+        0.86,
+        0.88,
+        0.9
+      ],
+      "cancellation_pair": [
+        0.82,
+        0.88
+      ]
+    },
+    "replication_gate": "valid numerical gate AND orthogonal-component angle >150 deg AND orthogonal norm reduction >=50%",
+    "location_gate": "largest consecutive orthogonal-fraction drop midpoint in [0.85,0.89], i.e. immediately inside physical transition onset R/R0=0.90",
+    "validity": "all centered step-angle checks <0.01 deg and baseline residual infinity norms <1e-7"
+  },
+  "feasibility_amendment": "R181_FEASIBILITY_AMENDMENT.md",
+  "original_34x40_status": "unresolved for computational feasibility; two runs produced no scientific output before timeout",
+  "cases": [
+    {
+      "tag": "aspect5_independent_radial",
+      "aspect": 5.0,
+      "H0_over_R0": 0.2,
+      "mesh": "34x20_ec10",
+      "bulk_cells": 24,
+      "radial_knots": [
+        0.0,
+        0.0375,
+        0.075,
+        0.11249999999999999,
+        0.15,
+        0.1875,
+        0.22499999999999998,
+        0.2625,
+        0.3,
+        0.33749999999999997,
+        0.375,
+        0.4125,
+        0.44999999999999996,
+        0.4875,
+        0.525,
+        0.5625,
+        0.6,
+        0.6375,
+        0.6749999999999999,
+        0.7125,
+        0.75,
+        0.7875,
+        0.825,
+        0.8624999999999999,
+        0.9,
+        0.91,
+        0.92,
+        0.93,
+        0.9400000000000001,
+        0.95,
+        0.96,
+        0.97,
+        0.98,
+        0.99,
+        1.0
+      ],
+      "baseline_grad_inf_pre": 5.17829415415047e-12,
+      "baseline_grad_inf_twist": 6.304207453376037e-09,
+      "newton_terminal_grad_inf": null,
+      "interface_singular_values_Pa_per_logbeta": [
+        21.69192592241756,
+        1.3255161816567593,
+        0.005446648581118957
+      ],
+      "interface_step_checks": [
+        {
+          "channel": 0,
+          "step_angle_deg": 0.00023573740172728804,
+          "radius_deriv": -0.0011226832263844244
+        },
+        {
+          "channel": 1,
+          "step_angle_deg": 0.0002490298351888992,
+          "radius_deriv": -1.072621103048732e-05
+        },
+        {
+          "channel": 2,
+          "step_angle_deg": 5.402437851462355e-05,
+          "radius_deriv": -0.00036310186191101934
+        }
+      ],
+      "full": {
+        "norm": 11.940856363873285,
+        "orth_norm": 0.3967569919889698,
+        "orth_fraction": 0.033226845705082476,
+        "angle_deg": 1.904108498442044,
+        "step_angle_deg": 9.680829405406877e-05,
+        "radius_deriv": 1.2867324983290018e-05
+      },
+      "window_rows": [
+        {
+          "center": 0.8,
+          "halfwidth": 0.02,
+          "norm": 2.8599953455382545,
+          "orth_norm": 1.709859867955346,
+          "orth_fraction": 0.5978540736518396,
+          "angle_deg": 36.71636109639108,
+          "step_angle_deg": 0.0004844915321730208,
+          "radius_deriv": 1.3933298959045715e-08,
+          "mask_mass_fraction": 0.6400907231412041
+        },
+        {
+          "center": 0.82,
+          "halfwidth": 0.02,
+          "norm": 3.328077085365865,
+          "orth_norm": 2.0255721704454386,
+          "orth_fraction": 0.6086313863799107,
+          "angle_deg": 37.490608944428956,
+          "step_angle_deg": 0.0004171582069532962,
+          "radius_deriv": 1.8489654252107357e-08,
+          "mask_mass_fraction": 0.6728145303883155
+        },
+        {
+          "center": 0.84,
+          "halfwidth": 0.02,
+          "norm": 3.3019919207098285,
+          "orth_norm": 1.3617078096229176,
+          "orth_fraction": 0.41238980661412145,
+          "angle_deg": 24.355047383554805,
+          "step_angle_deg": 0.0005221075410856049,
+          "radius_deriv": 2.637889906509372e-08,
+          "mask_mass_fraction": 0.705691923196404
+        },
+        {
+          "center": 0.86,
+          "halfwidth": 0.02,
+          "norm": 3.6382375979221737,
+          "orth_norm": 1.0359178479046949,
+          "orth_fraction": 0.28473067523031365,
+          "angle_deg": 16.542750427570954,
+          "step_angle_deg": 0.0003434240153317375,
+          "radius_deriv": 3.957945082788683e-08,
+          "mask_mass_fraction": 0.7399551731850548
+        },
+        {
+          "center": 0.88,
+          "halfwidth": 0.02,
+          "norm": 3.8129032799291895,
+          "orth_norm": 0.37236371745374536,
+          "orth_fraction": 0.09765884160079209,
+          "angle_deg": 5.604372029243122,
+          "step_angle_deg": 0.00047942260138364413,
+          "radius_deriv": 6.761924353781978e-08,
+          "mask_mass_fraction": 0.7744639448449013
+        },
+        {
+          "center": 0.9,
+          "halfwidth": 0.02,
+          "norm": 4.317644749443962,
+          "orth_norm": 0.34267502668503563,
+          "orth_fraction": 0.07936619304521668,
+          "angle_deg": 4.552135432247502,
+          "step_angle_deg": 0.0003213956019407613,
+          "radius_deriv": 1.1764811347347859e-07,
+          "mask_mass_fraction": 0.8099025499183923
+        }
+      ],
+      "cancellation": {
+        "interior_center": 0.82,
+        "expanded_center": 0.88,
+        "halfwidth": 0.02,
+        "orth_angle_deg": 169.8816344064771,
+        "orth_norm_before": 2.0255721704454386,
+        "orth_norm_added_band": 2.1037059634472715,
+        "orth_norm_after": 0.37236371745374536,
+        "reduction_fraction": 0.8161686249017432,
+        "pass": true
+      },
+      "collapse_location": {
+        "largest_fraction_drop": 0.1962415797657892,
+        "interval": [
+          0.82,
+          0.84
+        ],
+        "midpoint": 0.83,
+        "pass_preinterface_location": false
+      },
+      "valid": true,
+      "runtime_s": 11.120662450790405
+    },
+    {
+      "tag": "aspect2p5_independent_geometry",
+      "aspect": 2.5,
+      "H0_over_R0": 0.4,
+      "mesh": "34x20_ec10",
+      "bulk_cells": 24,
+      "radial_knots": [
+        0.0,
+        0.0375,
+        0.075,
+        0.11249999999999999,
+        0.15,
+        0.1875,
+        0.22499999999999998,
+        0.2625,
+        0.3,
+        0.33749999999999997,
+        0.375,
+        0.4125,
+        0.44999999999999996,
+        0.4875,
+        0.525,
+        0.5625,
+        0.6,
+        0.6375,
+        0.6749999999999999,
+        0.7125,
+        0.75,
+        0.7875,
+        0.825,
+        0.8624999999999999,
+        0.9,
+        0.91,
+        0.92,
+        0.93,
+        0.9400000000000001,
+        0.95,
+        0.96,
+        0.97,
+        0.98,
+        0.99,
+        1.0
+      ],
+      "baseline_grad_inf_pre": 2.2516710718178956e-14,
+      "baseline_grad_inf_twist": 5.224314904295202e-14,
+      "newton_terminal_grad_inf": 5.224314904295202e-14,
+      "interface_singular_values_Pa_per_logbeta": [
+        9.875634312820662,
+        0.46760389313623146,
+        0.03640694360885765
+      ],
+      "interface_step_checks": [
+        {
+          "channel": 0,
+          "step_angle_deg": 0.00036151542674136097,
+          "radius_deriv": -0.0008043996069240222
+        },
+        {
+          "channel": 1,
+          "step_angle_deg": 0.00012417638001377643,
+          "radius_deriv": -1.587364240052125e-05
+        },
+        {
+          "channel": 2,
+          "step_angle_deg": 9.512203281431655e-05,
+          "radius_deriv": -7.229116638640676e-05
+        }
+      ],
+      "full": {
+        "norm": 4.2382201272841105,
+        "orth_norm": 0.10996703554768547,
+        "orth_fraction": 0.025946513452606658,
+        "angle_deg": 1.486792569214612,
+        "step_angle_deg": 0.00014854925414784428,
+        "radius_deriv": 6.463509727439032e-06
+      },
+      "window_rows": [
+        {
+          "center": 0.8,
+          "halfwidth": 0.02,
+          "norm": 1.3115666441104605,
+          "orth_norm": 1.0562147106010107,
+          "orth_fraction": 0.8053076946900884,
+          "angle_deg": 53.63998153905589,
+          "step_angle_deg": 0.0006787795811821657,
+          "radius_deriv": 1.8496315590255108e-08,
+          "mask_mass_fraction": 0.6400907231412042
+        },
+        {
+          "center": 0.82,
+          "halfwidth": 0.02,
+          "norm": 1.3327552331380552,
+          "orth_norm": 1.111366030185933,
+          "orth_fraction": 0.8338860749165115,
+          "angle_deg": 56.500026247933405,
+          "step_angle_deg": 0.0005433422460912753,
+          "radius_deriv": 2.894129380592858e-08,
+          "mask_mass_fraction": 0.6728145303883157
+        },
+        {
+          "center": 0.84,
+          "halfwidth": 0.02,
+          "norm": 1.2487428171943273,
+          "orth_norm": 0.7297822556753344,
+          "orth_fraction": 0.5844135762998882,
+          "angle_deg": 35.76157266284792,
+          "step_angle_deg": 0.0006067057543891784,
+          "radius_deriv": 4.444888901389277e-08,
+          "mask_mass_fraction": 0.7056919231964041
+        },
+        {
+          "center": 0.86,
+          "halfwidth": 0.02,
+          "norm": 1.3385670825100777,
+          "orth_norm": 0.5192015524443174,
+          "orth_fraction": 0.38787861977803306,
+          "angle_deg": 22.822565171222674,
+          "step_angle_deg": 0.00043031970429517293,
+          "radius_deriv": 6.748823722091402e-08,
+          "mask_mass_fraction": 0.739955173185055
+        },
+        {
+          "center": 0.88,
+          "halfwidth": 0.02,
+          "norm": 1.2574054106078303,
+          "orth_norm": 0.29877785018809333,
+          "orth_fraction": 0.23761457336473843,
+          "angle_deg": 13.745793203123078,
+          "step_angle_deg": 0.0005515800660522938,
+          "radius_deriv": 1.0228706770476492e-07,
+          "mask_mass_fraction": 0.7744639448449014
+        },
+        {
+          "center": 0.9,
+          "halfwidth": 0.02,
+          "norm": 1.4086575590100416,
+          "orth_norm": 0.1577086291958326,
+          "orth_fraction": 0.1119566839982494,
+          "angle_deg": 6.42812214906001,
+          "step_angle_deg": 0.0005284424379598292,
+          "radius_deriv": 1.5901280292496267e-07,
+          "mask_mass_fraction": 0.8099025499183926
+        }
+      ],
+      "cancellation": {
+        "interior_center": 0.82,
+        "expanded_center": 0.88,
+        "halfwidth": 0.02,
+        "orth_angle_deg": 170.38563682233854,
+        "orth_norm_before": 1.111366030185933,
+        "orth_norm_added_band": 1.3298819815086036,
+        "orth_norm_after": 0.29877785018809333,
+        "reduction_fraction": 0.7311616136601662,
+        "pass": true
+      },
+      "collapse_location": {
+        "largest_fraction_drop": 0.24947249861662324,
+        "interval": [
+          0.82,
+          0.84
+        ],
+        "midpoint": 0.83,
+        "pass_preinterface_location": false
+      },
+      "valid": true,
+      "runtime_s": 17.487377643585205
+    }
+  ],
+  "subgates": {
+    "cancellation_passes": [
+      true,
+      true
+    ],
+    "cancellation_pass_count": 2,
+    "location_passes": [
+      false,
+      false
+    ],
+    "location_pass_count": 0
+  },
+  "verdict": "CANCELLATION_REPLICATED_LOCATION_NOT_REPLICATED",
+  "claim_boundary": "The annular-cancellation vector mechanism replicates across an independent bulk radial partition and a second thickness on the amended 34x20 grid. The radial location of the largest local collapse does not replicate, and full axial mesh independence is not established."
+}

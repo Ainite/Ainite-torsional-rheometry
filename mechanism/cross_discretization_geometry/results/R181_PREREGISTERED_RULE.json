@@ -1,0 +1,38 @@
+{
+  "reference": "R180 38x40 smooth-support gate; feasibility amendment reduces only axial count from 40 to 20 before any R181 scientific output",
+  "new_discretization": {
+    "nr": 34,
+    "nz": 20,
+    "edge_cells": 10,
+    "bulk_cells": 24,
+    "note": "bulk radial partition differs from R180: 24 rather than 22 cells on 0<=R/R0<=0.9; axial count reduced to 20 by pre-result feasibility amendment"
+  },
+  "cases": [
+    {
+      "tag": "aspect5_independent_radial",
+      "H0_over_R0": 0.2
+    },
+    {
+      "tag": "aspect2p5_independent_geometry",
+      "H0_over_R0": 0.4
+    }
+  ],
+  "smooth_window": {
+    "halfwidth": 0.02,
+    "centers": [
+      0.8,
+      0.82,
+      0.84,
+      0.86,
+      0.88,
+      0.9
+    ],
+    "cancellation_pair": [
+      0.82,
+      0.88
+    ]
+  },
+  "replication_gate": "valid numerical gate AND orthogonal-component angle >150 deg AND orthogonal norm reduction >=50%",
+  "location_gate": "largest consecutive orthogonal-fraction drop midpoint in [0.85,0.89], i.e. immediately inside physical transition onset R/R0=0.90",
+  "validity": "all centered step-angle checks <0.01 deg and baseline residual infinity norms <1e-7"
+}
