@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "mesh_025_direct": true,
+    "mesh_025_profiled": true,
+    "mesh_032_direct": true,
+    "mesh_032_profiled": true,
+    "mesh_032_radius": true,
+    "torque_difference": true,
+    "axial_difference": true,
+    "tangent_032_direct": true,
+    "tangent_032_profiled": true,
+    "MR_partition": true
+  }
+}

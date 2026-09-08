@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "svd_E2_0.73": true,
+    "svd_erank_0.73": true,
+    "svd_fullresp_0.73": true,
+    "svd_E2_0.83": true,
+    "svd_erank_0.83": true,
+    "svd_fullresp_0.83": true,
+    "svd_E2_0.93": true,
+    "svd_erank_0.93": true,
+    "svd_fullresp_0.93": true,
+    "svd_not_uniform_rank2": true,
+    "source_weight_output_compression": true,
+    "inner_support_verdict": true,
+    "inner_support_0.73": true,
+    "inner_support_0.83": true,
+    "inner_support_0.93": true
+  }
+}

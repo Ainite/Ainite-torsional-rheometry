@@ -1,0 +1,150 @@
+{
+  "round17_closure": {
+    "baseline_MR_partition_f": 0.2893401015228426,
+    "amplitude_calibration": {
+      "source_bound": 0.25,
+      "profile_norm_ratio_38x40": 1.2840125044428428,
+      "unrounded_bound_from_ratio": 0.3210031261107107,
+      "reported_bound": 0.32
+    },
+    "tangent_pre_solve_predictions": {
+      "0.25": {
+        "direct_residual_sigma": 0.9398154775940362,
+        "profiled_residual_sigma": 0.16280913431248217,
+        "angle_deg": 1.985603049149223,
+        "constitutive_tangent_norm_sigma": 4.698896752419443,
+        "interface_tangent_norm_sigma": 3.77046945023567,
+        "optimal_scalar": 1.2454882426298526
+      },
+      "0.32": {
+        "direct_residual_sigma": 0.20842136874723183,
+        "profiled_residual_sigma": 0.162809134312482,
+        "angle_deg": 1.9856030491499574,
+        "constitutive_tangent_norm_sigma": 4.698896752419443,
+        "interface_tangent_norm_sigma": 4.826200896301658,
+        "optimal_scalar": 0.973037689554572
+      }
+    },
+    "meshcheck_30x40": {
+      "mesh": "30x40_ec8",
+      "ndof": 15932,
+      "baseline_radius_nondim": 0.9996617680491994,
+      "constitutive_radius_nondim": 0.9996757411282262,
+      "constitutive_norm_sigma": 4.6398979183357465,
+      "constitutive_J_pre": [
+        0.9617917113912376,
+        1.0476246778117337
+      ],
+      "constitutive_J_twist": [
+        0.9636866531879547,
+        1.046552922567019
+      ],
+      "025": {
+        "constitutive_norm_sigma": 4.6398979183357465,
+        "interface_norm_sigma": 3.6604638978112,
+        "direct_residual_sigma": 0.9878167108482898,
+        "direction_angle_deg": 1.785416303221957,
+        "optimal_scalar": 1.2669556330701093,
+        "direction_profiled_residual_sigma": 0.14456228413155062,
+        "radius_mismatch_um": 3.595515689384099,
+        "betas": [
+          778.8007830714049,
+          3852.076250063224,
+          3852.076250063224
+        ],
+        "J_pre": [
+          0.9367795180009346,
+          1.0726194728400689
+        ],
+        "J_twist": [
+          0.940204873917476,
+          1.070301964789575
+        ]
+      },
+      "032": {
+        "constitutive_norm_sigma": 4.6398979183357465,
+        "interface_norm_sigma": 4.641491539837365,
+        "direct_residual_sigma": 0.1434372629647639,
+        "direction_angle_deg": 1.7708921326403924,
+        "optimal_scalar": 0.9991792103741369,
+        "direction_profiled_residual_sigma": 0.14338666145555443,
+        "radius_mismatch_um": 4.949466621011478,
+        "betas": [
+          726.1490370736909,
+          4131.3832930078715,
+          4131.3832930078715
+        ],
+        "J_pre": [
+          0.9290680070665222,
+          1.0802166343332273
+        ],
+        "J_twist": [
+          0.9327567237351853,
+          1.0776650313927016
+        ]
+      },
+      "finite_constitutive_dAB_Pa": [
+        2.238339409862357,
+        -1.0962204584768143
+      ],
+      "interface_025_dAB_Pa": [
+        1.7783807007853654,
+        -0.8997848476191064
+      ],
+      "interface_032_dAB_Pa": [
+        2.247456731673106,
+        -1.1184908688374509
+      ]
+    },
+    "global_reactions_38x40": {
+      "baseline": {
+        "pre": {
+          "axial_force_N": -47.30774323048513,
+          "torque_Nm": 0.0
+        },
+        "twist": {
+          "axial_force_N": -47.544356083975025,
+          "torque_Nm": 0.06979966366380154
+        }
+      },
+      "constitutive": {
+        "pre": {
+          "axial_force_N": -47.33086953442453,
+          "torque_Nm": 0.0
+        },
+        "twist": {
+          "axial_force_N": -47.570386426655716,
+          "torque_Nm": 0.06986889136942219
+        }
+      },
+      "interface_032": {
+        "pre": {
+          "axial_force_N": -47.76290535097429,
+          "torque_Nm": 0.0
+        },
+        "twist": {
+          "axial_force_N": -48.00497012729723,
+          "torque_Nm": 0.06992291264081295
+        }
+      },
+      "constitutive_vs_interface_032": {
+        "axial_force_N_difference_interface_minus_constitutive": -0.434583700641511,
+        "axial_force_N_relative_to_constitutive_pct": 0.9135593239536839,
+        "axial_force_N_twist_increment_constitutive": -0.23951689223118677,
+        "axial_force_N_twist_increment_interface": -0.242064776322934,
+        "axial_force_N_twist_increment_difference": -0.002547884091747221,
+        "axial_force_N_twist_increment_relative_pct": 1.0637596655554253,
+        "torque_Nm_difference_interface_minus_constitutive": 5.402127139075841e-05,
+        "torque_Nm_relative_to_constitutive_pct": 0.07731806005784224,
+        "torque_Nm_twist_increment_constitutive": 0.06986889136942219,
+        "torque_Nm_twist_increment_interface": 0.06992291264081295,
+        "torque_Nm_twist_increment_difference": 5.402127139075841e-05,
+        "torque_Nm_twist_increment_relative_pct": 0.07731806005784224
+      }
+    },
+    "noise_independent_fractions": {
+      "one_radial_profile_residual_fraction": 0.11209236941350356,
+      "rank2_tangent_residual_fraction": 0.03065295178961578
+    }
+  }
+}
