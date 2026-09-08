@@ -1,0 +1,32 @@
+{
+  "schema": "U1-R186-material-case-v1",
+  "f": 0.15,
+  "small_strain_shear_normalization": "fixed coefficient sum",
+  "equilibrium_grad_inf_pre": 1.7767358764797514e-12,
+  "equilibrium_grad_inf_twist": 1.683256199626771e-11,
+  "interface_singular_values": [
+    21.908124725040082,
+    0.7152760059997012,
+    0.007940960759506404
+  ],
+  "max_step_angle_deg": 0.000842421532835558,
+  "level1": {
+    "direct_state_angle_deg": 172.53515646387848,
+    "direct_orth_norm": 8.042983964412924,
+    "state_orth_norm": 7.6943485297529595,
+    "direct_over_state": 1.0453105852057314,
+    "total_band_orth_norm": 1.0819127941604851,
+    "total_over_max_component": 0.1345163435545226,
+    "closure_rel": 3.0534926701605917e-07,
+    "pass": true
+  },
+  "level2": {
+    "inner_orth_norm": 1.3384732670755464,
+    "total_band_angle_to_inner_deg": 167.04397247513816,
+    "orth_norm_after": 0.3735694020720164,
+    "reduction_fraction": 0.7208988694348489,
+    "pass": true
+  },
+  "valid": true,
+  "pass": true
+}

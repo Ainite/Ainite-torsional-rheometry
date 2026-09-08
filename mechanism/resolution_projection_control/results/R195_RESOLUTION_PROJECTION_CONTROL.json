@@ -1,0 +1,334 @@
+{
+  "schema": "U1-R195-resolution-projection-control-v1",
+  "radial_knots": [
+    0.0,
+    0.0375,
+    0.075,
+    0.11249999999999999,
+    0.15,
+    0.1875,
+    0.22499999999999998,
+    0.2625,
+    0.3,
+    0.33749999999999997,
+    0.375,
+    0.4125,
+    0.44999999999999996,
+    0.4875,
+    0.525,
+    0.5625,
+    0.6,
+    0.6375,
+    0.6749999999999999,
+    0.7125,
+    0.75,
+    0.7875,
+    0.825,
+    0.8624999999999999,
+    0.9,
+    0.91,
+    0.92,
+    0.93,
+    0.9400000000000001,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    1.0
+  ],
+  "cases": [
+    {
+      "xmax": 0.73,
+      "historical_winner_midpoint": 0.74,
+      "distance_to_xmax": 0.010000000000000009,
+      "cell": {
+        "cell_index": 19,
+        "lower": 0.7125,
+        "upper": 0.75,
+        "width": 0.03749999999999998
+      },
+      "distance_in_local_cell_widths": 0.26666666666666705,
+      "interface_singular_values": [
+        23.338921477002852,
+        0.906645961814455,
+        0.003413843622915116
+      ],
+      "width_sensitivity": [
+        {
+          "halfwidth": 0.01,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 1.718394340563959,
+              "band_orth_norm": 1.7941102890953733,
+              "after_orth_norm": 0.19062224429781535,
+              "angle_deg": 174.2890931409395,
+              "reduction_fraction": 0.8890695576690184
+            },
+            "3": {
+              "inner_orth_norm": 1.6166838973168665,
+              "band_orth_norm": 1.679454313381988,
+              "after_orth_norm": 0.18430613351609015,
+              "angle_deg": 173.9717113113478,
+              "reduction_fraction": 0.8859974211273
+            }
+          }
+        },
+        {
+          "halfwidth": 0.02,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 1.0470374381387577,
+              "band_orth_norm": 1.0902941201968916,
+              "after_orth_norm": 0.1860882766967366,
+              "angle_deg": 170.28266757652545,
+              "reduction_fraction": 0.8222716113880969
+            },
+            "3": {
+              "inner_orth_norm": 1.0309645564623902,
+              "band_orth_norm": 1.0663575604363849,
+              "after_orth_norm": 0.18070120997028705,
+              "angle_deg": 170.30530431179295,
+              "reduction_fraction": 0.8247260695456516
+            }
+          }
+        },
+        {
+          "halfwidth": 0.04,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 0.5084136327538765,
+              "band_orth_norm": 0.4924922077513813,
+              "after_orth_norm": 0.18346274993094758,
+              "angle_deg": 158.9542247211071,
+              "reduction_fraction": 0.6391466748497634
+            },
+            "3": {
+              "inner_orth_norm": 0.508003249042322,
+              "band_orth_norm": 0.4893397201821018,
+              "after_orth_norm": 0.1800521010587822,
+              "angle_deg": 159.30815559603178,
+              "reduction_fraction": 0.6455689970522571
+            }
+          }
+        }
+      ]
+    },
+    {
+      "xmax": 0.83,
+      "historical_winner_midpoint": 0.86,
+      "distance_to_xmax": 0.030000000000000027,
+      "cell": {
+        "cell_index": 22,
+        "lower": 0.825,
+        "upper": 0.8624999999999999,
+        "width": 0.03749999999999998
+      },
+      "distance_in_local_cell_widths": 0.8000000000000012,
+      "interface_singular_values": [
+        21.981087521588428,
+        1.249609794230812,
+        0.003862712832503282
+      ],
+      "width_sensitivity": [
+        {
+          "halfwidth": 0.01,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 2.7867272503685534,
+              "band_orth_norm": 2.851129184303169,
+              "after_orth_norm": 0.3167666609541532,
+              "angle_deg": 173.69247238307864,
+              "reduction_fraction": 0.8863302244910191
+            },
+            "3": {
+              "inner_orth_norm": 2.379053869456386,
+              "band_orth_norm": 2.4826035286419814,
+              "after_orth_norm": 0.3129248507134044,
+              "angle_deg": 173.0338766785116,
+              "reduction_fraction": 0.8684666813429879
+            }
+          }
+        },
+        {
+          "halfwidth": 0.02,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 2.0358093327074784,
+              "band_orth_norm": 2.05044301448988,
+              "after_orth_norm": 0.31057889262878097,
+              "angle_deg": 171.29161423668657,
+              "reduction_fraction": 0.8474420528293121
+            },
+            "3": {
+              "inner_orth_norm": 1.8273428590817031,
+              "band_orth_norm": 1.8750596586465826,
+              "after_orth_norm": 0.30311795587233115,
+              "angle_deg": 170.7243968235102,
+              "reduction_fraction": 0.8341209180500164
+            }
+          }
+        },
+        {
+          "halfwidth": 0.04,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 0.9886170981863516,
+              "band_orth_norm": 0.9192813696275699,
+              "after_orth_norm": 0.3095199448846793,
+              "angle_deg": 161.79368068838346,
+              "reduction_fraction": 0.6869162535702618
+            },
+            "3": {
+              "inner_orth_norm": 0.9756989420912736,
+              "band_orth_norm": 0.916066887580529,
+              "after_orth_norm": 0.29832616864412753,
+              "angle_deg": 162.21379296497327,
+              "reduction_fraction": 0.6942436280552817
+            }
+          }
+        }
+      ]
+    },
+    {
+      "xmax": 0.93,
+      "historical_winner_midpoint": 0.96,
+      "distance_to_xmax": 0.029999999999999916,
+      "cell": {
+        "cell_index": 30,
+        "lower": 0.96,
+        "upper": 0.97,
+        "width": 0.010000000000000009
+      },
+      "distance_in_local_cell_widths": 2.999999999999989,
+      "interface_singular_values": [
+        20.346998090267768,
+        1.5865879310509299,
+        0.03353115252786524
+      ],
+      "width_sensitivity": [
+        {
+          "halfwidth": 0.01,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 3.5008499333519394,
+              "band_orth_norm": 3.3602456523892363,
+              "after_orth_norm": 0.40913696112017983,
+              "angle_deg": 173.57821962895017,
+              "reduction_fraction": 0.8831321053717816
+            },
+            "3": {
+              "inner_orth_norm": 3.441967332691538,
+              "band_orth_norm": 3.3042737298977993,
+              "after_orth_norm": 0.40813437573485106,
+              "angle_deg": 173.46898956938213,
+              "reduction_fraction": 0.8814240995670056
+            }
+          }
+        },
+        {
+          "halfwidth": 0.02,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 3.1578437176841616,
+              "band_orth_norm": 3.0170973032166453,
+              "after_orth_norm": 0.4080057475972879,
+              "angle_deg": 172.88678127085882,
+              "reduction_fraction": 0.8707960925005803
+            },
+            "3": {
+              "inner_orth_norm": 3.1141917921209523,
+              "band_orth_norm": 2.976446029917893,
+              "after_orth_norm": 0.4069275790669089,
+              "angle_deg": 172.78928199175434,
+              "reduction_fraction": 0.8693312402606499
+            }
+          }
+        },
+        {
+          "halfwidth": 0.04,
+          "rank_results": {
+            "2": {
+              "inner_orth_norm": 1.5690344886299152,
+              "band_orth_norm": 1.4045096742858825,
+              "after_orth_norm": 0.4093881658185946,
+              "angle_deg": 165.4925965066723,
+              "reduction_fraction": 0.7390827487953606
+            },
+            "3": {
+              "inner_orth_norm": 1.5513075699286372,
+              "band_orth_norm": 1.3792163592953235,
+              "after_orth_norm": 0.4082757860651058,
+              "angle_deg": 165.45878256909796,
+              "reduction_fraction": 0.7368182854391104
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "outer_extension": {
+    "xmax": 0.93,
+    "halfwidth": 0.01,
+    "candidates": [
+      {
+        "midpoint": 0.92,
+        "pair": [
+          0.89,
+          0.95
+        ],
+        "angle_deg": 171.9593302065914,
+        "reduction_fraction": 0.854860167625827,
+        "inner_orth_norm": 4.091219068174459,
+        "after_orth_norm": 0.5937988497608614
+      },
+      {
+        "midpoint": 0.94,
+        "pair": [
+          0.91,
+          0.97
+        ],
+        "angle_deg": 171.11701919527775,
+        "reduction_fraction": 0.8303181092247255,
+        "inner_orth_norm": 2.7848191224329617,
+        "after_orth_norm": 0.4725333741615656
+      },
+      {
+        "midpoint": 0.96,
+        "pair": [
+          0.93,
+          0.99
+        ],
+        "angle_deg": 173.46898956938213,
+        "reduction_fraction": 0.8814240995670056,
+        "inner_orth_norm": 3.441967332691538,
+        "after_orth_norm": 0.40813437573485106
+      },
+      {
+        "midpoint": 0.98,
+        "pair": [
+          0.95,
+          1.01
+        ],
+        "angle_deg": 140.22594737220678,
+        "reduction_fraction": 0.35981765661363596,
+        "inner_orth_norm": 0.5937988497608614,
+        "after_orth_norm": 0.38013953914003573
+      }
+    ],
+    "best": {
+      "midpoint": 0.96,
+      "pair": [
+        0.93,
+        0.99
+      ],
+      "angle_deg": 173.46898956938213,
+      "reduction_fraction": 0.8814240995670056,
+      "inner_orth_norm": 3.441967332691538,
+      "after_orth_norm": 0.40813437573485106
+    }
+  },
+  "max_step_angle_deg": 0.0009418172093306389,
+  "equilibrium_grad_inf_pre": 5.17829415415047e-12,
+  "equilibrium_grad_inf_twist": 6.304207453376037e-09
+}

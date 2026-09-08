@@ -1,0 +1,202 @@
+{
+  "schema": "U1-R183-observer-window-translation-v1",
+  "preregistered_rule": {
+    "schema": "U1-R183-observer-window-translation-preregister-v1",
+    "state": "fixed 34x20 aspect=5 edge_width=0.10 baseline from R181",
+    "observer_xmax": [
+      0.75,
+      0.85,
+      0.95
+    ],
+    "observer_points": "25 equal-area samples from x=0.05 to each xmax",
+    "smooth_halfwidth": 0.02,
+    "source_pair_relative_to_observer_xmax": [
+      -0.03,
+      0.03
+    ],
+    "decision_cases": [
+      0.75,
+      0.95
+    ],
+    "control_case": 0.85,
+    "support_gate": "BOTH shifted observer cutoffs (0.75 and 0.95) must have angle >150 deg between existing and added-band components in the orthogonal complement of that observer-specific rank-3 interface span, and >=50% reduction of orthogonal norm after adding the band",
+    "control_gate": "xmax=0.85 must reproduce angle >150 deg and >=50% reduction",
+    "validity": "all pressure-tangent centered step-angle checks <0.01 deg and frozen baseline equilibrium residual infinity norms <1e-7",
+    "claim_boundary": "A pass supports observer-window translation on one fixed FE state and interface law. It would not by itself prove a Saint-Venant theorem or universality across loading/material families."
+  },
+  "baseline_grad_inf_pre": 5.17829415415047e-12,
+  "baseline_grad_inf_twist": 6.304207453376037e-09,
+  "max_step_angle_deg": 0.0006518168996724977,
+  "valid": true,
+  "cases": [
+    {
+      "xmax": 0.75,
+      "interface_singular_values": [
+        23.077410833892657,
+        0.9692221866007603,
+        0.0036298208059833076
+      ],
+      "interface_step_checks": [
+        {
+          "channel": 0,
+          "step_angle_deg": 0.00029454695850309853
+        },
+        {
+          "channel": 1,
+          "step_angle_deg": 0.00022347351907360977
+        },
+        {
+          "channel": 2,
+          "step_angle_deg": 5.698579341288131e-05
+        }
+      ],
+      "windows": [
+        {
+          "relative_center": -0.03,
+          "center": 0.72,
+          "norm": 1.8883257323759761,
+          "orth_norm": 1.1446277925679318,
+          "orth_fraction": 0.6061601411996381,
+          "angle_deg": 37.31237104733855,
+          "step_angle_deg": 0.0006518168996724977,
+          "mass_fraction": 0.5182262339552913
+        },
+        {
+          "relative_center": 0.03,
+          "center": 0.78,
+          "norm": 2.2948355888685827,
+          "orth_norm": 0.19172734084542725,
+          "orth_fraction": 0.08354731021927114,
+          "angle_deg": 4.792494722583285,
+          "step_angle_deg": 0.0006145308270175349,
+          "mass_fraction": 0.6087024869477368
+        }
+      ],
+      "cancellation": {
+        "pair_absolute": [
+          0.72,
+          0.78
+        ],
+        "orth_angle_deg": 170.35992526838,
+        "orth_norm_before": 1.1446277925679318,
+        "orth_norm_added_band": 1.1240923066859427,
+        "orth_norm_after": 0.19172734084542725,
+        "reduction_fraction": 0.8324980905668088,
+        "pass": true
+      }
+    },
+    {
+      "xmax": 0.85,
+      "interface_singular_values": [
+        21.69192592241756,
+        1.3255161816567593,
+        0.005446648581118957
+      ],
+      "interface_step_checks": [
+        {
+          "channel": 0,
+          "step_angle_deg": 0.00023573740172728804
+        },
+        {
+          "channel": 1,
+          "step_angle_deg": 0.0002490298351888992
+        },
+        {
+          "channel": 2,
+          "step_angle_deg": 5.402437851462355e-05
+        }
+      ],
+      "windows": [
+        {
+          "relative_center": -0.03,
+          "center": 0.82,
+          "norm": 3.328077085365865,
+          "orth_norm": 2.0255721704454386,
+          "orth_fraction": 0.6086313863799107,
+          "angle_deg": 37.490608944428956,
+          "step_angle_deg": 0.0004171582069532962,
+          "mass_fraction": 0.6728145303883155
+        },
+        {
+          "relative_center": 0.03,
+          "center": 0.88,
+          "norm": 3.8129032799291895,
+          "orth_norm": 0.37236371745374536,
+          "orth_fraction": 0.09765884160079209,
+          "angle_deg": 5.604372029243122,
+          "step_angle_deg": 0.00047942260138364413,
+          "mass_fraction": 0.7744639448449013
+        }
+      ],
+      "cancellation": {
+        "pair_absolute": [
+          0.82,
+          0.88
+        ],
+        "orth_angle_deg": 169.8816344064771,
+        "orth_norm_before": 2.0255721704454386,
+        "orth_norm_added_band": 2.1037059634472715,
+        "orth_norm_after": 0.37236371745374536,
+        "reduction_fraction": 0.8161686249017432,
+        "pass": true
+      }
+    },
+    {
+      "xmax": 0.95,
+      "interface_singular_values": [
+        19.92193755894041,
+        1.6027365483676412,
+        0.05032135224686844
+      ],
+      "interface_step_checks": [
+        {
+          "channel": 0,
+          "step_angle_deg": 0.00030530616111808207
+        },
+        {
+          "channel": 1,
+          "step_angle_deg": 0.0002575963988378552
+        },
+        {
+          "channel": 2,
+          "step_angle_deg": 9.275927499908657e-05
+        }
+      ],
+      "windows": [
+        {
+          "relative_center": -0.03,
+          "center": 0.92,
+          "norm": 5.382428137429878,
+          "orth_norm": 2.764930213335267,
+          "orth_fraction": 0.5136957043806492,
+          "angle_deg": 30.910313838641816,
+          "step_angle_deg": 0.00031759691106002496,
+          "mass_fraction": 0.8464571445312499
+        },
+        {
+          "relative_center": 0.03,
+          "center": 0.98,
+          "norm": 7.773518098744261,
+          "orth_norm": 0.5756474954325295,
+          "orth_fraction": 0.07405237733035187,
+          "angle_deg": 4.246776111279103,
+          "step_angle_deg": 0.00017733846654828406,
+          "mass_fraction": 0.9604571445312499
+        }
+      ],
+      "cancellation": {
+        "pair_absolute": [
+          0.9199999999999999,
+          0.98
+        ],
+        "orth_angle_deg": 168.33935205363088,
+        "orth_norm_before": 2.764930213335267,
+        "orth_norm_added_band": 2.845981954443362,
+        "orth_norm_after": 0.5756474954325295,
+        "reduction_fraction": 0.7918039693529407,
+        "pass": true
+      }
+    }
+  ],
+  "verdict": "OBSERVER_WINDOW_TRANSLATION_SUPPORTED"
+}

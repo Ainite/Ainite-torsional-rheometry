@@ -1,0 +1,11 @@
+{
+  "schema": "U1-R195-resolution-projection-control-v1",
+  "purpose": "Address radial-resolution, window-width, rank-2 versus rank-3 nuisance projection, and outer-scan-boundary sensitivity of the Q=1 source localization diagnostic.",
+  "fixed_before_execution": true,
+  "xmax_winner_midpoints": {"0.73": 0.74, "0.83": 0.86, "0.93": 0.96},
+  "annulus_pair_half_separation": 0.03,
+  "smooth_halfwidths": [0.01, 0.02, 0.04],
+  "projection_ranks": [2, 3],
+  "outer_extension": {"xmax": 0.93, "halfwidth": 0.01, "midpoints": [0.92,0.94,0.96,0.98]},
+  "report_only": true
+}

@@ -1,0 +1,59 @@
+{
+  "status": "post-hoc explanatory decomposition",
+  "cases": [
+    {
+      "xmax": 0.75,
+      "inner_orth_norm": 1.1446277925679318,
+      "full": {
+        "norm": 1.1240923066859427,
+        "angle_to_inner": 170.35992526838
+      },
+      "direct": {
+        "norm": 6.4716299098777705,
+        "angle_to_inner": 117.91138484832858
+      },
+      "state": {
+        "norm": 5.979524687240712,
+        "angle_to_inner": 71.25879803931493
+      },
+      "direct_state_band_angle": 170.68114368539418,
+      "closure_rel": 3.2450824598796247e-07
+    },
+    {
+      "xmax": 0.85,
+      "inner_orth_norm": 2.0255721704454386,
+      "full": {
+        "norm": 2.1037059634472715,
+        "angle_to_inner": 169.8816344064771
+      },
+      "direct": {
+        "norm": 9.842742035028543,
+        "angle_to_inner": 112.77102925281649
+      },
+      "state": {
+        "norm": 9.193961706960142,
+        "angle_to_inner": 79.0993367993686
+      },
+      "direct_state_band_angle": 167.9246353856668,
+      "closure_rel": 1.3424461153370528e-07
+    },
+    {
+      "xmax": 0.95,
+      "inner_orth_norm": 2.764930213335267,
+      "full": {
+        "norm": 2.845981954443362,
+        "angle_to_inner": 168.33935205363088
+      },
+      "direct": {
+        "norm": 12.518836233503226,
+        "angle_to_inner": 91.75854663496595
+      },
+      "state": {
+        "norm": 12.339890952485526,
+        "angle_to_inner": 101.22954797009707
+      },
+      "direct_state_band_angle": 166.87780374416582,
+      "closure_rel": 5.647354772321011e-08
+    }
+  ]
+}

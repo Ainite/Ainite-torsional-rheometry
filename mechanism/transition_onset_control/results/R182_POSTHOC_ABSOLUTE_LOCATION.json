@@ -1,0 +1,32 @@
+{
+  "schema": "U1-R182-posthoc-absolute-location-diagnostic-v1",
+  "status": "post-hoc diagnostic; does not alter preregistered R182 verdict",
+  "cases": [
+    {
+      "edge_width": 0.05,
+      "transition_onset": 0.95,
+      "absolute_pair": [
+        0.82,
+        0.88
+      ],
+      "orth_angle_deg": 168.627240868754,
+      "orth_norm_before": 1.607996403008449,
+      "orth_norm_added_band": 1.5014007830802953,
+      "orth_norm_after": 0.3258372627995119,
+      "reduction_fraction": 0.7973644330361106
+    },
+    {
+      "edge_width": 0.15,
+      "transition_onset": 0.85,
+      "absolute_pair": [
+        0.82,
+        0.88
+      ],
+      "orth_angle_deg": 171.48404245312682,
+      "orth_norm_before": 1.8751061853823556,
+      "orth_norm_added_band": 1.878593848267291,
+      "orth_norm_after": 0.2787240278469939,
+      "reduction_fraction": 0.851355603208061
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "U1-R182-transition-onset-translation-preregister-v1",
+  "mesh": "34x20, aspect=5, edge_cells=10, tapered_springs",
+  "edge_widths": [
+    0.05,
+    0.15
+  ],
+  "transition_onset": "r0=1-edge_width",
+  "smooth_halfwidth": 0.02,
+  "relative_centers_from_onset": [
+    -0.1,
+    -0.08,
+    -0.06,
+    -0.04,
+    -0.02,
+    0.0
+  ],
+  "cancellation_pair_relative_to_onset": [
+    -0.08,
+    -0.02
+  ],
+  "causal_support_gate": "for BOTH altered transition widths: valid tangent numerics, orthogonal-component angle >150 deg, and orthogonal norm reduction >=50% from r0-0.08 to r0-0.02",
+  "approach_gate": "for BOTH widths, rank-3 orthogonal fraction at r0-0.02 is at least 0.20 lower than at r0-0.08",
+  "validity": "all centered step-angle checks <0.01 deg and equilibrium residual infinity norms <1e-7",
+  "claim_boundary": "A pass supports translation with physical transition onset for the tested two widths on one amended 34x20 geometry; it does not establish a continuum theorem or width universality."
+}

@@ -1,0 +1,399 @@
+{
+  "schema": "U1-R182-transition-onset-translation-v2",
+  "preregistered_rule": {
+    "schema": "U1-R182-transition-onset-translation-preregister-v1",
+    "mesh": "34x20, aspect=5, edge_cells=10, tapered_springs",
+    "edge_widths": [
+      0.05,
+      0.15
+    ],
+    "transition_onset": "r0=1-edge_width",
+    "smooth_halfwidth": 0.02,
+    "relative_centers_from_onset": [
+      -0.1,
+      -0.08,
+      -0.06,
+      -0.04,
+      -0.02,
+      0.0
+    ],
+    "cancellation_pair_relative_to_onset": [
+      -0.08,
+      -0.02
+    ],
+    "causal_support_gate": "for BOTH altered transition widths: valid tangent numerics, orthogonal-component angle >150 deg, and orthogonal norm reduction >=50% from r0-0.08 to r0-0.02",
+    "approach_gate": "for BOTH widths, rank-3 orthogonal fraction at r0-0.02 is at least 0.20 lower than at r0-0.08",
+    "validity": "all centered step-angle checks <0.01 deg and equilibrium residual infinity norms <1e-7",
+    "claim_boundary": "A pass supports translation with physical transition onset for the tested two widths on one amended 34x20 geometry; it does not establish a continuum theorem or width universality."
+  },
+  "cases": [
+    {
+      "edge_width": 0.05,
+      "transition_onset": 0.95,
+      "mesh": "34x20_ec10",
+      "radial_knots": [
+        0.0,
+        0.03958333333333333,
+        0.07916666666666666,
+        0.11875,
+        0.15833333333333333,
+        0.19791666666666666,
+        0.2375,
+        0.27708333333333335,
+        0.31666666666666665,
+        0.35624999999999996,
+        0.3958333333333333,
+        0.4354166666666667,
+        0.475,
+        0.5145833333333333,
+        0.5541666666666667,
+        0.59375,
+        0.6333333333333333,
+        0.6729166666666666,
+        0.7124999999999999,
+        0.7520833333333333,
+        0.7916666666666666,
+        0.8312499999999999,
+        0.8708333333333333,
+        0.9104166666666667,
+        0.95,
+        0.955,
+        0.96,
+        0.965,
+        0.97,
+        0.975,
+        0.98,
+        0.985,
+        0.99,
+        0.995,
+        1.0
+      ],
+      "baseline_grad_inf_pre": 4.1407824922807396e-11,
+      "baseline_grad_inf_twist": 7.964709072827425e-09,
+      "interface_singular_values": [
+        18.51844512451957,
+        0.676238730840009,
+        0.005376565256386276
+      ],
+      "interface_step_checks": [
+        {
+          "channel": 0,
+          "step_angle_deg": 0.0008927039444719259,
+          "radius_deriv": -0.00035607870207954306
+        },
+        {
+          "channel": 1,
+          "step_angle_deg": 0.0004604064929288365,
+          "radius_deriv": -1.2555443351658369e-05
+        },
+        {
+          "channel": 2,
+          "step_angle_deg": 8.635784324979188e-05,
+          "radius_deriv": -0.0005885540410588419
+        }
+      ],
+      "full": {
+        "norm": 11.379310112337592,
+        "orth_norm": 0.3427201658668427,
+        "orth_fraction": 0.03011783337333088,
+        "angle_deg": 1.7258857279823019,
+        "step_angle_deg": 0.00015747437733149957,
+        "radius_deriv": 9.181635451938064e-06
+      },
+      "window_rows": [
+        {
+          "relative_center": -0.1,
+          "center": 0.85,
+          "norm": 3.5569690611047218,
+          "orth_norm": 0.5450474431574263,
+          "orth_fraction": 0.15323367558000228,
+          "angle_deg": 8.814369574624402,
+          "step_angle_deg": 0.000509632786772264,
+          "radius_deriv": 4.5501380441237416e-08,
+          "mask_mass_fraction": 0.7225636343459989
+        },
+        {
+          "relative_center": -0.08,
+          "center": 0.87,
+          "norm": 3.57538779402262,
+          "orth_norm": 0.3125662747920898,
+          "orth_fraction": 0.08742164285357862,
+          "angle_deg": 5.0152933276393705,
+          "step_angle_deg": 0.00036216007318998184,
+          "radius_deriv": 6.766809335090329e-08,
+          "mask_mass_fraction": 0.7570546883183816
+        },
+        {
+          "relative_center": -0.06,
+          "center": 0.8899999999999999,
+          "norm": 4.073559880362848,
+          "orth_norm": 0.3258910936404605,
+          "orth_fraction": 0.08000154734718963,
+          "angle_deg": 4.5886546773245325,
+          "step_angle_deg": 0.0005528097003591686,
+          "radius_deriv": 9.124478950184312e-08,
+          "mask_mass_fraction": 0.7921635451748877
+        },
+        {
+          "relative_center": -0.04,
+          "center": 0.9099999999999999,
+          "norm": 4.635243772807811,
+          "orth_norm": 0.3095804042058769,
+          "orth_fraction": 0.06678837605521398,
+          "angle_deg": 3.8295427404313065,
+          "step_angle_deg": 0.00028905502593793597,
+          "radius_deriv": 1.0051071086536467e-07,
+          "mask_mass_fraction": 0.8282098046298023
+        },
+        {
+          "relative_center": -0.02,
+          "center": 0.9299999999999999,
+          "norm": 5.357713783664733,
+          "orth_norm": 0.32972638872538945,
+          "orth_fraction": 0.06154236714374338,
+          "angle_deg": 3.5283475409367586,
+          "step_angle_deg": 0.000374835801790189,
+          "radius_deriv": 1.8419266112346122e-07,
+          "mask_mass_fraction": 0.8649635174734468
+        },
+        {
+          "relative_center": 0.0,
+          "center": 0.95,
+          "norm": 6.293527322416995,
+          "orth_norm": 0.3440141464419233,
+          "orth_fraction": 0.054661579876927664,
+          "angle_deg": 3.1334395460458193,
+          "step_angle_deg": 0.0002263820709999181,
+          "radius_deriv": 3.130939951745404e-07,
+          "mask_mass_fraction": 0.9022755411371405
+        }
+      ],
+      "cancellation": {
+        "pair_relative": [
+          -0.08,
+          -0.02
+        ],
+        "pair_absolute": [
+          0.87,
+          0.9299999999999999
+        ],
+        "orth_angle_deg": 105.3707569175272,
+        "orth_norm_before": 0.3125662747920898,
+        "orth_norm_added_band": 0.21658843710319653,
+        "orth_norm_after": 0.32972638872538945,
+        "reduction_fraction": -0.05490072127811629,
+        "pass": false
+      },
+      "approach": {
+        "orth_fraction_at_minus_0p08": 0.08742164285357862,
+        "orth_fraction_at_minus_0p02": 0.06154236714374338,
+        "drop": 0.02587927570983524,
+        "pass": false
+      },
+      "max_step_angle_deg": 0.0008927039444719259,
+      "valid": true,
+      "runtime_s": 10.763291120529175
+    },
+    {
+      "edge_width": 0.15,
+      "transition_onset": 0.85,
+      "mesh": "34x20_ec10",
+      "radial_knots": [
+        0.0,
+        0.035416666666666666,
+        0.07083333333333333,
+        0.10625,
+        0.14166666666666666,
+        0.17708333333333331,
+        0.2125,
+        0.24791666666666667,
+        0.2833333333333333,
+        0.31875,
+        0.35416666666666663,
+        0.38958333333333334,
+        0.425,
+        0.46041666666666664,
+        0.49583333333333335,
+        0.53125,
+        0.5666666666666667,
+        0.6020833333333333,
+        0.6375,
+        0.6729166666666666,
+        0.7083333333333333,
+        0.74375,
+        0.7791666666666667,
+        0.8145833333333333,
+        0.85,
+        0.865,
+        0.88,
+        0.895,
+        0.91,
+        0.925,
+        0.94,
+        0.955,
+        0.97,
+        0.985,
+        1.0
+      ],
+      "baseline_grad_inf_pre": 1.0538722387712189e-10,
+      "baseline_grad_inf_twist": 1.0243489910466419e-10,
+      "interface_singular_values": [
+        25.281993834739897,
+        1.7812460267046033,
+        0.020010464835577172
+      ],
+      "interface_step_checks": [
+        {
+          "channel": 0,
+          "step_angle_deg": 0.0001479937257273396,
+          "radius_deriv": -0.0016095495203316545
+        },
+        {
+          "channel": 1,
+          "step_angle_deg": 0.00014678700653807938,
+          "radius_deriv": -6.938170038495173e-06
+        },
+        {
+          "channel": 2,
+          "step_angle_deg": 5.88732492954631e-05,
+          "radius_deriv": -0.00039417283215215093
+        }
+      ],
+      "full": {
+        "norm": 11.941357868798221,
+        "orth_norm": 0.3246883204591822,
+        "orth_fraction": 0.027190234479745886,
+        "angle_deg": 1.5580777033302033,
+        "step_angle_deg": 0.00010229975540640462,
+        "radius_deriv": 1.8117574107634482e-05
+      },
+      "window_rows": [
+        {
+          "relative_center": -0.1,
+          "center": 0.75,
+          "norm": 1.9911977944099781,
+          "orth_norm": 1.161398354117451,
+          "orth_fraction": 0.5832661915244793,
+          "angle_deg": 35.68059859783159,
+          "step_angle_deg": 0.0009442728808173948,
+          "radius_deriv": 1.545430450278218e-09,
+          "mask_mass_fraction": 0.5622995975739579
+        },
+        {
+          "relative_center": -0.08,
+          "center": 0.77,
+          "norm": 2.2265243613764905,
+          "orth_norm": 1.2191343485647437,
+          "orth_fraction": 0.5475504197093293,
+          "angle_deg": 33.19912329068553,
+          "step_angle_deg": 0.0006961308228423052,
+          "radius_deriv": 2.0961010704922955e-09,
+          "mask_mass_fraction": 0.593032133033508
+        },
+        {
+          "relative_center": -0.06,
+          "center": 0.79,
+          "norm": 2.6008533763743014,
+          "orth_norm": 1.4331593023769282,
+          "orth_fraction": 0.5510342549085994,
+          "angle_deg": 33.43799614560247,
+          "step_angle_deg": 0.0005586505261747544,
+          "radius_deriv": 3.2107649872159527e-09,
+          "mask_mass_fraction": 0.6241788520309043
+        },
+        {
+          "relative_center": -0.04,
+          "center": 0.8099999999999999,
+          "norm": 2.961105482331814,
+          "orth_norm": 1.7140374297265022,
+          "orth_fraction": 0.5788505137536439,
+          "angle_deg": 35.3697344511187,
+          "step_angle_deg": 0.00041591572442629775,
+          "radius_deriv": 5.59996493620929e-09,
+          "mask_mass_fraction": 0.6564901795503798
+        },
+        {
+          "relative_center": -0.02,
+          "center": 0.83,
+          "norm": 3.225353584916317,
+          "orth_norm": 1.6429669224059107,
+          "orth_fraction": 0.509391258710179,
+          "angle_deg": 30.62329029447029,
+          "step_angle_deg": 0.0004097953416330978,
+          "radius_deriv": 1.0680345496894006e-08,
+          "mask_mass_fraction": 0.6889839044525226
+        },
+        {
+          "relative_center": 0.0,
+          "center": 0.85,
+          "norm": 3.6309752128301263,
+          "orth_norm": 0.9344021734144895,
+          "orth_fraction": 0.257341931201502,
+          "angle_deg": 14.912400009469602,
+          "step_angle_deg": 0.0003607332580408042,
+          "radius_deriv": 2.1547208461925038e-08,
+          "mask_mass_fraction": 0.7225055249865822
+        }
+      ],
+      "cancellation": {
+        "pair_relative": [
+          -0.08,
+          -0.02
+        ],
+        "pair_absolute": [
+          0.77,
+          0.83
+        ],
+        "orth_angle_deg": 133.0444055767528,
+        "orth_norm_before": 1.2191343485647437,
+        "orth_norm_added_band": 2.212539093046275,
+        "orth_norm_after": 1.6429669224059107,
+        "reduction_fraction": -0.34765042453289463,
+        "pass": false
+      },
+      "approach": {
+        "orth_fraction_at_minus_0p08": 0.5475504197093293,
+        "orth_fraction_at_minus_0p02": 0.509391258710179,
+        "drop": 0.03815916099915029,
+        "pass": false
+      },
+      "max_step_angle_deg": 0.0009442728808173948,
+      "valid": true,
+      "runtime_s": 13.572597980499268
+    }
+  ],
+  "verdict": "TRANSITION_ONSET_TRANSLATION_NOT_SUPPORTED",
+  "posthoc_absolute_location_diagnostic": {
+    "schema": "U1-R182-posthoc-absolute-location-diagnostic-v1",
+    "status": "post-hoc diagnostic; does not alter preregistered R182 verdict",
+    "cases": [
+      {
+        "edge_width": 0.05,
+        "transition_onset": 0.95,
+        "absolute_pair": [
+          0.82,
+          0.88
+        ],
+        "orth_angle_deg": 168.627240868754,
+        "orth_norm_before": 1.607996403008449,
+        "orth_norm_added_band": 1.5014007830802953,
+        "orth_norm_after": 0.3258372627995119,
+        "reduction_fraction": 0.7973644330361106
+      },
+      {
+        "edge_width": 0.15,
+        "transition_onset": 0.85,
+        "absolute_pair": [
+          0.82,
+          0.88
+        ],
+        "orth_angle_deg": 171.48404245312682,
+        "orth_norm_before": 1.8751061853823556,
+        "orth_norm_added_band": 1.878593848267291,
+        "orth_norm_after": 0.2787240278469939,
+        "reduction_fraction": 0.851355603208061
+      }
+    ]
+  },
+  "claim_boundary": "The preregistered relative-to-transition translation hypothesis failed for both altered transition widths. A post-hoc diagnostic shows strong cancellation remains near absolute 0.82-0.88, motivating the independently preregistered observer-window test R183; the post-hoc diagnostic does not alter the R182 verdict."
+}

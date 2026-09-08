@@ -1,0 +1,117 @@
+{
+  "schema": "U1-R184-nested-cancellation-v1",
+  "preregistered_rule": {
+    "schema": "U1-R184-nested-cancellation-preregister-v1",
+    "state": "fixed R181 34x20 aspect=5 edge_width=0.10 equilibrium state",
+    "new_observer_xmax": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "samples": "25 equal-area pressure points from 0.05 to xmax",
+    "source_pair": "C2 halfwidth=0.02, centers xmax-0.03 and xmax+0.03",
+    "level1_direct_state_gate": "for EACH new cutoff: direct-vs-state added-band angle >160 deg; direct/state orthogonal-norm ratio in [0.75,1.33]; total added-band orthogonal norm <=0.35*max(direct,state)",
+    "level2_interior_gate": "for EACH new cutoff: total added-band orthogonal component angle >150 deg to the pre-existing inner orthogonal component, and adding it reduces the inner orthogonal norm by >=50%",
+    "validity": "all centered finite-difference step-angle checks <0.01 deg; decomposition closure relative error <1e-5; baseline equilibrium residual infinity norms <1e-7",
+    "verdict_rule": "all three new cutoffs pass both levels -> NESTED_OBSERVER_BOUNDARY_CANCELLATION_SUPPORTED",
+    "claim_boundary": "This is a finite-BVP mechanism on one material/loading/geometry family. It does not establish a general Saint-Venant theorem."
+  },
+  "baseline_grad_inf_pre": 5.17829415415047e-12,
+  "baseline_grad_inf_twist": 6.304207453376037e-09,
+  "max_step_angle_deg": 0.0010772769579834392,
+  "max_decomposition_closure_rel": 3.3377485964107593e-07,
+  "valid": true,
+  "cases": [
+    {
+      "xmax": 0.7,
+      "pair": [
+        0.67,
+        0.73
+      ],
+      "interface_singular_values": [
+        23.7196205475716,
+        0.8180280406365134,
+        0.002951101338202542
+      ],
+      "level1": {
+        "direct_state_angle_deg": 171.7563505012761,
+        "direct_orth_norm": 5.1242726637299905,
+        "state_orth_norm": 4.579788065988449,
+        "direct_over_state": 1.1188886013711261,
+        "total_band_orth_norm": 0.8839918402391487,
+        "total_over_max_component": 0.17251069532191626,
+        "closure_rel": 3.3377485964107593e-07,
+        "pass": true
+      },
+      "level2": {
+        "inner_orth_norm": 0.8216801122095234,
+        "total_band_angle_to_inner_deg": 168.52209916284463,
+        "orth_norm_after": 0.18147967227742037,
+        "reduction_fraction": 0.7791358588570242,
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "xmax": 0.8,
+      "pair": [
+        0.77,
+        0.83
+      ],
+      "interface_singular_values": [
+        22.403828412252913,
+        1.1392022920076792,
+        0.004210108506050831
+      ],
+      "level1": {
+        "direct_state_angle_deg": 172.51143095326324,
+        "direct_orth_norm": 7.5086750984502615,
+        "state_orth_norm": 7.267944073089677,
+        "direct_over_state": 1.0331223001910426,
+        "total_band_orth_norm": 0.994416517475038,
+        "total_over_max_component": 0.13243568331785707,
+        "closure_rel": 2.998187762934757e-07,
+        "pass": true
+      },
+      "level2": {
+        "inner_orth_norm": 1.2184690086159708,
+        "total_band_angle_to_inner_deg": 167.74602121861025,
+        "orth_norm_after": 0.3246718426631147,
+        "reduction_fraction": 0.7335411566750463,
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "xmax": 0.9,
+      "pair": [
+        0.87,
+        0.93
+      ],
+      "interface_singular_values": [
+        20.91206339314169,
+        1.5069800716950064,
+        0.010442956197868813
+      ],
+      "level1": {
+        "direct_state_angle_deg": 170.2078602328858,
+        "direct_orth_norm": 13.15480634681359,
+        "state_orth_norm": 12.31915064785579,
+        "direct_over_state": 1.0678338728736343,
+        "total_band_orth_norm": 2.328139076194944,
+        "total_over_max_component": 0.17698011014497944,
+        "closure_rel": 1.4689937963719837e-07,
+        "pass": true
+      },
+      "level2": {
+        "inner_orth_norm": 2.2656765574740416,
+        "total_band_angle_to_inner_deg": 170.29217543257673,
+        "orth_norm_after": 0.39365896215173646,
+        "reduction_fraction": 0.8262510326758118,
+        "pass": true
+      },
+      "pass": true
+    }
+  ],
+  "verdict": "NESTED_OBSERVER_BOUNDARY_CANCELLATION_SUPPORTED"
+}

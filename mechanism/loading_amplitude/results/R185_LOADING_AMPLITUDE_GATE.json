@@ -1,0 +1,84 @@
+{
+  "schema": "U1-R185-loading-amplitude-v1",
+  "preregistered_rule": {
+    "schema": "U1-R185-loading-amplitude-preregister-v1",
+    "state_family": "same 34x20 aspect=5 edge_width=0.10 material/preload/interface; only gamma_R changes",
+    "new_gamma_R": [
+      0.15,
+      0.25
+    ],
+    "observer_xmax": 0.8,
+    "source_pair": [
+      0.77,
+      0.83
+    ],
+    "smooth_halfwidth": 0.02,
+    "level1": "for EACH gamma: direct-vs-state added-band angle >160 deg; direct/state orthogonal norm ratio in [0.75,1.33]; total added-band orthogonal norm <=0.35*max(direct,state)",
+    "level2": "for EACH gamma: total added-band orthogonal component angle >150 deg to pre-existing interior orthogonal component; adding it reduces inner orthogonal norm by >=50%",
+    "validity": "all centered step-angle checks <0.01 deg; decomposition closure <1e-5; equilibrium residual infinity norms <1e-7",
+    "verdict_rule": "both new gamma cases pass both levels -> LOADING_AMPLITUDE_NESTED_CANCELLATION_REPLICATED",
+    "claim_boundary": "A pass establishes loading-amplitude robustness over gamma_R=0.15,0.20,0.25 for this material/preload/geometry family; material-family robustness remains open."
+  },
+  "baseline_grad_inf_pre": 5.17829415415047e-12,
+  "cases": [
+    {
+      "gamma_R": 0.15,
+      "equilibrium_grad_inf": 6.3027334566700954e-09,
+      "interface_singular_values": [
+        12.612958586904938,
+        0.642356130084156,
+        0.002293832638575482
+      ],
+      "max_step_angle_deg": 0.001383004209359198,
+      "level1": {
+        "direct_state_angle_deg": 173.21785608522964,
+        "direct_orth_norm": 4.5903456375104925,
+        "state_orth_norm": 4.367319172883504,
+        "direct_over_state": 1.051067131986082,
+        "total_band_orth_norm": 0.5747270901036082,
+        "total_over_max_component": 0.12520344555476723,
+        "closure_rel": 6.093039985776291e-07,
+        "pass": true
+      },
+      "level2": {
+        "inner_orth_norm": 0.7082042854448742,
+        "total_band_angle_to_inner_deg": 167.9050810942864,
+        "orth_norm_after": 0.1894374625431142,
+        "reduction_fraction": 0.7325101437022301,
+        "pass": true
+      },
+      "valid": true,
+      "pass": true
+    },
+    {
+      "gamma_R": 0.25,
+      "equilibrium_grad_inf": 6.4054239048289e-09,
+      "interface_singular_values": [
+        34.96756540465821,
+        1.7732635404925086,
+        0.006509293807521521
+      ],
+      "max_step_angle_deg": 0.0003927219568073042,
+      "level1": {
+        "direct_state_angle_deg": 172.1941967455373,
+        "direct_orth_norm": 11.947667693865915,
+        "state_orth_norm": 11.63423713238594,
+        "direct_over_state": 1.0269403621323385,
+        "total_band_orth_norm": 1.635297773673654,
+        "total_over_max_component": 0.13687171551592758,
+        "closure_rel": 2.0623914315283252e-07,
+        "pass": true
+      },
+      "level2": {
+        "inner_orth_norm": 1.9621519603217605,
+        "total_band_angle_to_inner_deg": 168.23416953860843,
+        "orth_norm_after": 0.4915980811376631,
+        "reduction_fraction": 0.7494597303987357,
+        "pass": true
+      },
+      "valid": true,
+      "pass": true
+    }
+  ],
+  "verdict": "LOADING_AMPLITUDE_NESTED_CANCELLATION_REPLICATED"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "U1-R184-nested-cancellation-preregister-v1",
+  "state": "fixed R181 34x20 aspect=5 edge_width=0.10 equilibrium state",
+  "new_observer_xmax": [
+    0.7,
+    0.8,
+    0.9
+  ],
+  "samples": "25 equal-area pressure points from 0.05 to xmax",
+  "source_pair": "C2 halfwidth=0.02, centers xmax-0.03 and xmax+0.03",
+  "level1_direct_state_gate": "for EACH new cutoff: direct-vs-state added-band angle >160 deg; direct/state orthogonal-norm ratio in [0.75,1.33]; total added-band orthogonal norm <=0.35*max(direct,state)",
+  "level2_interior_gate": "for EACH new cutoff: total added-band orthogonal component angle >150 deg to the pre-existing inner orthogonal component, and adding it reduces the inner orthogonal norm by >=50%",
+  "validity": "all centered finite-difference step-angle checks <0.01 deg; decomposition closure relative error <1e-5; baseline equilibrium residual infinity norms <1e-7",
+  "verdict_rule": "all three new cutoffs pass both levels -> NESTED_OBSERVER_BOUNDARY_CANCELLATION_SUPPORTED",
+  "claim_boundary": "This is a finite-BVP mechanism on one material/loading/geometry family. It does not establish a general Saint-Venant theorem."
+}

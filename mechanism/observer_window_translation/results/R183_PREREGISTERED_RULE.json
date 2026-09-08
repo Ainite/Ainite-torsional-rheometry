@@ -1,0 +1,24 @@
+{
+  "schema": "U1-R183-observer-window-translation-preregister-v1",
+  "state": "fixed 34x20 aspect=5 edge_width=0.10 baseline from R181",
+  "observer_xmax": [
+    0.75,
+    0.85,
+    0.95
+  ],
+  "observer_points": "25 equal-area samples from x=0.05 to each xmax",
+  "smooth_halfwidth": 0.02,
+  "source_pair_relative_to_observer_xmax": [
+    -0.03,
+    0.03
+  ],
+  "decision_cases": [
+    0.75,
+    0.95
+  ],
+  "control_case": 0.85,
+  "support_gate": "BOTH shifted observer cutoffs (0.75 and 0.95) must have angle >150 deg between existing and added-band components in the orthogonal complement of that observer-specific rank-3 interface span, and >=50% reduction of orthogonal norm after adding the band",
+  "control_gate": "xmax=0.85 must reproduce angle >150 deg and >=50% reduction",
+  "validity": "all pressure-tangent centered step-angle checks <0.01 deg and frozen baseline equilibrium residual infinity norms <1e-7",
+  "claim_boundary": "A pass supports observer-window translation on one fixed FE state and interface law. It would not by itself prove a Saint-Venant theorem or universality across loading/material families."
+}

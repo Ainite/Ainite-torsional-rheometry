@@ -1,0 +1,99 @@
+{
+  "schema": "U1-R186-material-baseline-v1",
+  "preregistered_rule": {
+    "schema": "U1-R186-material-baseline-preregister-v1",
+    "scientific_question": "Does nested observer-boundary cancellation survive materially different Mooney-Rivlin baseline partitions at fixed total small-strain shear modulus?",
+    "reference_f": 0.2893401015228426,
+    "new_f": [
+      0.15,
+      0.45
+    ],
+    "fixed_geometry": "34x20, H0/R0=0.2 (aspect=5), edge_width=0.10, edge_cells=10",
+    "fixed_loading": "lambda0=0.95 via eps=0.05, gamma_R=0.20",
+    "fixed_interface_beta": [
+      1000.0,
+      3000.0,
+      3000.0
+    ],
+    "observer_xmax": 0.8,
+    "samples": "25 equal-area pressure points from x=0.05 to x=0.80",
+    "source_pair": [
+      0.77,
+      0.83
+    ],
+    "smooth_halfwidth": 0.02,
+    "material_change_only": "baseline Wi = 0.5(1-f)(I1bar-3)+0.5 f(I2bar-3); coefficient sum remains 0.5, so total small-strain shear modulus is fixed",
+    "level1": "for EACH new f: direct-vs-state added-band angle >160 deg; direct/state off-interface norm ratio in [0.75,1.33]; total added-band off-interface norm <=0.35*max(direct,state)",
+    "level2": "for EACH new f: total added-band off-interface component angle >150 deg to pre-existing interior off-interface component; adding it reduces inner off-interface norm by >=50%",
+    "validity": "all centered finite-difference step-angle checks <0.01 deg; decomposition closure relative error <1e-5; re-equilibrated preload/twist residual infinity norms <1e-7",
+    "verdict_rule": "both new material baselines pass both levels -> MATERIAL_BASELINE_NESTED_CANCELLATION_REPLICATED",
+    "claim_boundary": "A pass establishes robustness only over f=0.15, 0.289340, 0.45 in this incompressible Mooney-Rivlin baseline family, not arbitrary hyperelastic energies."
+  },
+  "cases": [
+    {
+      "schema": "U1-R186-material-case-v1",
+      "f": 0.15,
+      "small_strain_shear_normalization": "fixed coefficient sum",
+      "equilibrium_grad_inf_pre": 1.7767358764797514e-12,
+      "equilibrium_grad_inf_twist": 1.683256199626771e-11,
+      "interface_singular_values": [
+        21.908124725040082,
+        0.7152760059997012,
+        0.007940960759506404
+      ],
+      "max_step_angle_deg": 0.000842421532835558,
+      "level1": {
+        "direct_state_angle_deg": 172.53515646387848,
+        "direct_orth_norm": 8.042983964412924,
+        "state_orth_norm": 7.6943485297529595,
+        "direct_over_state": 1.0453105852057314,
+        "total_band_orth_norm": 1.0819127941604851,
+        "total_over_max_component": 0.1345163435545226,
+        "closure_rel": 3.0534926701605917e-07,
+        "pass": true
+      },
+      "level2": {
+        "inner_orth_norm": 1.3384732670755464,
+        "total_band_angle_to_inner_deg": 167.04397247513816,
+        "orth_norm_after": 0.3735694020720164,
+        "reduction_fraction": 0.7208988694348489,
+        "pass": true
+      },
+      "valid": true,
+      "pass": true
+    },
+    {
+      "schema": "U1-R186-material-case-v1",
+      "f": 0.45,
+      "small_strain_shear_normalization": "fixed coefficient sum",
+      "equilibrium_grad_inf_pre": 3.0816026813651476e-12,
+      "equilibrium_grad_inf_twist": 5.31285721254611e-11,
+      "interface_singular_values": [
+        23.024114522781467,
+        1.3734296313936318,
+        0.0028079969051847758
+      ],
+      "max_step_angle_deg": 0.00060369464567255,
+      "level1": {
+        "direct_state_angle_deg": 170.05636239987652,
+        "direct_orth_norm": 5.537599148655426,
+        "state_orth_norm": 5.235985096491669,
+        "direct_over_state": 1.0576040700279783,
+        "total_band_orth_norm": 0.9808592564785649,
+        "total_over_max_component": 0.17712716831746939,
+        "closure_rel": 4.463179815031492e-07,
+        "pass": true
+      },
+      "level2": {
+        "inner_orth_norm": 1.1426105717100683,
+        "total_band_angle_to_inner_deg": 169.86836387880263,
+        "orth_norm_after": 0.24721788529091177,
+        "reduction_fraction": 0.783637670251101,
+        "pass": true
+      },
+      "valid": true,
+      "pass": true
+    }
+  ],
+  "verdict": "MATERIAL_BASELINE_NESTED_CANCELLATION_REPLICATED"
+}

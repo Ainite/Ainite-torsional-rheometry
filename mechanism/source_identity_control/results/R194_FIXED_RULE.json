@@ -1,0 +1,22 @@
+{
+  "schema": "U1-R194-source-identity-control-v1",
+  "scientific_question": "Does absolute-radius boundary tracking persist when the Q=1 exact-null source is replaced by the Mooney-Rivlin coefficient-partition source at the same finite equilibrium state, observer, and interface nuisance projection?",
+  "fixed_before_execution": true,
+  "xmax_values": [0.73, 0.83, 0.93],
+  "midpoints": {"start": 0.60, "stop": 0.96, "step": 0.02},
+  "annulus_pair": "cumulative-window centers midpoint +/- 0.03",
+  "cumulative_window_halfwidth": 0.02,
+  "candidate_eligibility": {
+    "interior_orth_norm_min_fraction_of_full": 0.10,
+    "band_orth_norm_min_fraction_of_full": 0.10,
+    "angle_deg_min": 150.0,
+    "reduction_fraction_min": 0.50
+  },
+  "localization": {"winner_distance_to_xmax_max": 0.05},
+  "classification": {
+    "OBSERVER_GENERAL_SOURCE_IDENTITY_CONTROL": "all 3 MR-partition cases localize and each winner reduces the orthogonal norm by at least 50%",
+    "SOURCE_SELECTIVE_Q1_MECHANISM": "at least 2 of 3 MR-partition cases either fail localization or have no >=50% eligible winner",
+    "MIXED_SOURCE_IDENTITY_EFFECT": "otherwise"
+  },
+  "claim_boundary": "This control tests source identity only within the same 34x20 finite-BVP baseline and observer/interface model; it does not establish universality over arbitrary hyperelastic perturbations."
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "U1-R186-material-baseline-preregister-v1",
+  "scientific_question": "Does nested observer-boundary cancellation survive materially different Mooney-Rivlin baseline partitions at fixed total small-strain shear modulus?",
+  "reference_f": 0.2893401015228426,
+  "new_f": [0.15, 0.45],
+  "fixed_geometry": "34x20, H0/R0=0.2 (aspect=5), edge_width=0.10, edge_cells=10",
+  "fixed_loading": "lambda0=0.95 via eps=0.05, gamma_R=0.20",
+  "fixed_interface_beta": [1000.0, 3000.0, 3000.0],
+  "observer_xmax": 0.80,
+  "samples": "25 equal-area pressure points from x=0.05 to x=0.80",
+  "source_pair": [0.77, 0.83],
+  "smooth_halfwidth": 0.02,
+  "material_change_only": "baseline Wi = 0.5(1-f)(I1bar-3)+0.5 f(I2bar-3); coefficient sum remains 0.5, so total small-strain shear modulus is fixed",
+  "level1": "for EACH new f: direct-vs-state added-band angle >160 deg; direct/state off-interface norm ratio in [0.75,1.33]; total added-band off-interface norm <=0.35*max(direct,state)",
+  "level2": "for EACH new f: total added-band off-interface component angle >150 deg to pre-existing interior off-interface component; adding it reduces inner off-interface norm by >=50%",
+  "validity": "all centered finite-difference step-angle checks <0.01 deg; decomposition closure relative error <1e-5; re-equilibrated preload/twist residual infinity norms <1e-7",
+  "verdict_rule": "both new material baselines pass both levels -> MATERIAL_BASELINE_NESTED_CANCELLATION_REPLICATED",
+  "claim_boundary": "A pass establishes robustness only over f=0.15, 0.289340, 0.45 in this incompressible Mooney-Rivlin baseline family, not arbitrary hyperelastic energies."
+}
